@@ -28,7 +28,7 @@ const ProjectSix = () => {
         <img src="../img/project-6/6-6.png" className="w-full" />
         <img src="../img/project-6/6-7.png" className="w-full" />
         <img src="../img/project-6/6-8.png" className="w-full" />
-        <video src="../img/project-6/6-9.mov" autoplay="true" className="w-full" />
+        <video src="../img/project-6/6-9.mov" className="w-full" />
         <h2 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold" style={{ marginTop: '60px' }}>You May also like</h2>
         <div className="mt-5 grid grid-cols-1 tablet:grid-cols-3 gap-4">
           {reversedProjects.map((p) => (
