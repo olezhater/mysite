@@ -103,6 +103,7 @@ export default function Home() {
               img={project.imageSrc}
               name={project.title}
               description={project.description}
+              isHomepage={true}
               onClick={() => window.location.href = project.url}
             />
           ))}

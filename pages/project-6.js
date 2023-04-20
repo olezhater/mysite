@@ -39,12 +39,13 @@ const ProjectSix = () => {
         <div className="mt-5 grid grid-cols-1 tablet:grid-cols-3 gap-4">
           {reversedProjects.map((p) => (
             <WorkCard
-              key={p.id}
-              img={p.imageSrc}
-              name={p.title}
-              description={p.description}
-              onClick={() => window.open(p.url)}
-            />
+                key={p.id}
+                img={p.imageSrc}
+                name={p.title}
+                description={p.description}
+                isHomepage={true}
+                onClick={() => window.location.href = p.url}
+          />
           ))}
         </div>
       </div>
