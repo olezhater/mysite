@@ -6,7 +6,7 @@ import WorkCard from "../components/WorkCard";
 import data from "../data/portfolio.json";
 import Cursor from "../components/Cursor";
 
-const ProjectFive = () => {
+const ProjectFour = () => {
   const project = data.projects.find((p) => p.id === "4");
 
   const filteredProjects = data.projects.filter((p) => p.url !== project.url);
@@ -46,4 +46,4 @@ const ProjectFive = () => {
   );
 };
 
-export default ProjectFive;
+export default ProjectFour;
