@@ -27,7 +27,7 @@ const ProjectFour = () => {
                 style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
             />
         </div>
-        <h2 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold" style={{ marginTop: '60px' }}>You May also like</h2>
+        <h2 className="mt-40 text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">You May also like</h2>
         <div className="mt-5 grid grid-cols-1 tablet:grid-cols-3 gap-4">
           {reversedProjects.map((p) => (
             <WorkCard
