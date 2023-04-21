@@ -74,19 +74,10 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   {showBlog && (
                     <Button onClick={() => router.push("/blog")}>Blog</Button>
                   )}
-                  {showResume && (
-                    <Button
-                      onClick={() =>
-                        window.open("mailto:hello@chetanverma.com")
-                      }
-                    >
-                      Resume
-                    </Button>
+                  {showResume && !isBlog && (
+                    <Button onClick={() => router.push("/resume")}>Resume</Button>
                   )}
-
-                  <Button
-                    onClick={() => window.open("https://t.me/olegteretenko")}
-                  >
+                  <Button onClick={() => window.open("https://t.me/olegteretenko")}>
                     Contact
                   </Button>
                 </div>
@@ -98,18 +89,12 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   {showBlog && (
                     <Button onClick={() => router.push("/blog")}>Blog</Button>
                   )}
-                  {showResume && (
-                    <Button
-                      onClick={() => router.push("/resume")}
-                      classes="first:ml-1"
-                    >
+                  {showResume && !isBlog && (
+                    <Button onClick={() => router.push("/resume")} classes="first:ml-1">
                       Resume
                     </Button>
                   )}
-
-                  <Button
-                    onClick={() => window.open("https://t.me/olegteretenko")}
-                  >
+                  <Button onClick={() => window.open("https://t.me/olegteretenko")}>
                     Contact
                   </Button>
                 </div>
@@ -165,7 +150,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             {showBlog && (
               <Button onClick={() => router.push("/blog")}>Blog</Button>
             )}
-            {showResume && (
+            {showResume && !isBlog && (
               <Button
                 onClick={() => router.push("/resume")}
                 classes="first:ml-1"
