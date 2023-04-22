@@ -10,11 +10,25 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
   const router = useRouter();
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   const { name, showBlog, showResume } = data;
 
+  const handleScroll = () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollClass = scrollTop > 0 ? "scroll" : "";
+    document.body.classList = scrollClass;
+    if (scrollTop > 100) { // изменить значение 100 на нужное вам
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
   useEffect(() => {
     setMounted(true);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -105,7 +119,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
       </Popover>
       <div
         className={`mt-10 hidden flex-row items-center justify-between sticky ${
-          theme === "light" && "bg-white"
+          scrolled ? (theme === "light" ? "bg-white" : "bg-black bg-opacity-20") : ""
         } dark:text-white top-0 z-10 tablet:flex`}
       >
         <h1
