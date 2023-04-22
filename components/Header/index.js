@@ -119,12 +119,20 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
       </Popover>
       <div
         className={`mt-10 hidden flex-row items-center justify-between sticky ${
-          scrolled ? (theme === "light" ? "bg-white" : "bg-black bg-opacity-20") : ""
+          scrolled ? (theme === "light" ? "bg-white" : "bg-black") : ""
         } dark:text-white top-0 z-10 tablet:flex`}
+        style={{
+          backgroundColor: scrolled
+            ? theme === "light"
+              ? "rgb(255, 255, 255)"
+              : "rgb(30, 30, 30)"
+            : "transparent",
+          opacity: scrolled ? "100" : "unset",
+        }}
       >
         <h1
           onClick={() => router.push("/")}
-          className="font-medium cursor-pointer mob:p-2 laptop:p-0"
+          className="font-medium cursor-pointer mob:p-2 tablet:pl-4 laptop:pl-10"
         >
           {name}.
         </h1>
@@ -152,7 +160,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               >
                 <img
-                  className="h-6"
+                  className="h-6 tablet:pr-2 laptop:pr-2"
                   src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
                 ></img>
               </Button>

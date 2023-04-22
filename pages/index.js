@@ -26,7 +26,7 @@ export default function Home() {
   // Handling Scroll
   const handleWorkScroll = () => {
     window.scrollTo({
-      top: workRef.current.offsetTop,
+      top: workRef.current.offsetTop -20,
       left: 0,
       behavior: "smooth",
     });
@@ -34,7 +34,7 @@ export default function Home() {
 
   const handleAboutScroll = () => {
     window.scrollTo({
-      top: aboutRef.current.offsetTop,
+      top: aboutRef.current.offsetTop -20,
       left: 0,
       behavior: "smooth",
     });
@@ -57,12 +57,11 @@ export default function Home() {
 
       <div className="gradient-circle"></div>
       <div className="gradient-circle-bottom"></div>
-
+      <Header
+        handleWorkScroll={handleWorkScroll}
+        handleAboutScroll={handleAboutScroll}
+      />
       <div className="container mx-auto mb-10">
-        <Header
-          handleWorkScroll={handleWorkScroll}
-          handleAboutScroll={handleAboutScroll}
-        />
         <div className="laptop:mt-20 mt-10">
           <div className="mt-5">
             <h1
