@@ -60,25 +60,25 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   </Button>
                 )}
 
-                <Popover.Button>
-                  <img
-                    className="h-5"
-                    src={`/images/${
-                      !open
-                        ? theme === "dark"
-                          ? "menu-white.svg"
-                          : "menu.svg"
-                        : theme === "light"
+              <Popover.Button>
+                <img
+                  className="h-5"
+                  src={`/images/${
+                    open
+                      ? theme === "light"
                         ? "cancel.svg"
                         : "cancel-white.svg"
-                    }`}
-                  ></img>
-                </Popover.Button>
+                      : theme === "light"
+                      ? "menu.svg"
+                      : "menu-white.svg"
+                  }`}
+                />
+              </Popover.Button>
               </div>
             </div>
             <Popover.Panel
               className={`absolute right-0 z-10 w-11/12 p-4 ${
-                theme === "dark" ? "bg-slate-800" : "bg-white"
+                theme === "light" ? "bg-white" : "bg-slate-800"
               } shadow-md rounded-md`}
             >
               {!isBlog ? (
