@@ -9,7 +9,7 @@ import Cursor from "../components/Cursor";
 const ProjectThree = () => {
   const project = data.projects.find((p) => p.id === "3");
 
-  const filteredProjects = data.projects.filter((p) => p.url !== project.url);
+  const filteredProjects = data.projects.filter((p) => p.url !== project.url && p.id !== "64565912-3f25-4c21-8a6b-bb372a08a2c8");
   const totalProjects = filteredProjects.length;
   const reversedProjects = filteredProjects.slice(Math.max(totalProjects - 3, 0)).reverse();
 
