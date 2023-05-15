@@ -52,7 +52,8 @@ export default function Home() {
     <div className={`relative ${data.showCursor && "cursor-none"}`}>
       {data.showCursor && <Cursor />}
       <Head>
-        <title>{data.name}</title>
+        <title>{data.name} - {data.headerTaglineThree}</title>
+        <meta name="description" content='Senior Product Designer and Expert Mobile UX/UI Designer specializing in fintech, edtech, and e-commerce. With a strong focus on enhancing user experience for mobile devices, Oleg brings extensive experience in designing intuitive interfaces for millions of users. Connect with Oleg for innovative design solutions and collaborations.' />
       </Head>
 
       <div className="gradient-circle"></div>
@@ -104,6 +105,7 @@ export default function Home() {
               description={project.description}
               isHomepage={true}
               onClick={() => window.location.href = project.url}
+              alt={project.alt}
             />
           ))}
           </div>

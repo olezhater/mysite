@@ -1,8 +1,8 @@
 {
   "name": "Oleg Teretenko",
   "headerTaglineOne": "Hi there👋",
-  "headerTaglineTwo": "I'm Oleg Teretenko",
-  "headerTaglineThree": "product designer.",
+  "headerTaglineTwo": "I'm Oleg Teretenko, ",
+  "headerTaglineThree": "a product designer.",
   "headerTaglineFour": "This is a small selection of my past projects",
   "showCursor": true,
   "showBlog": false,
@@ -36,49 +36,56 @@
       "title": "Eneo",
       "description": "The design of an e-commerce website in neomorphic style. The presentation includes a menu with navigation through the catalog, a detailed product card, properties of the product, and reviews.",
       "imageSrc": "../img/project-1/1-0.jpg",
-      "url": "/project-1"
+      "url": "/project-1",
+      "alt": "Eneo - Design of an e-commerce website in neomorphic style"
     },
     {
       "id": "2",
       "title": "Animate web",
       "description": "The mobile version of the website was created for a web agency. A new design with animations was developed, with a strong emphasis on the user flow.",
       "imageSrc": "../img/project-2/2-0.jpg",
-      "url": "/project-2"
+      "url": "/project-2",
+      "alt": "Animate web - Mobile version of the website for a web agency"
     },
     {
       "id": "3",
       "title": "Alarm clock",
       "description": "A mobile application for the hearing-impaired that serves as an alarm clock. The main features include connecting to devices such as smartwatches and fitness trackers, as well as vibration and light signals in three modes.",
       "imageSrc": "../img/project-3/3-0.jpg",
-      "url": "/project-3"
+      "url": "/project-3",
+      "alt": "Alarm clock - Mobile application for the hearing-impaired serving as an alarm clock"
     },
     {
       "id": "4",
       "title": "System unavailability messages",
       "description": "\"All systems are currently unavailable\" and \"Scheduled maintenance is in progress\" - these are the types of messages that need to be displayed to customers if something goes wrong. My task was to develop an interface for bank's customer support staff, allowing them to easily configure these and other messages.",
       "imageSrc": "../img/project-4/4-0.jpg",
-      "url": "/project-4"
+      "url": "/project-4",
+      "alt": "System unavailability messages - Interface for configuring system messages for bank's customer support staff"
     },
     {
       "id": "5",
       "title": "Security questions",
       "description": "A new feature design had to be developed for the bank's mobile application. Control questions are an additional way of identifying the client. In the app settings, the user should understand the purpose of control questions, select a question and provide an answer.",
       "imageSrc": "../img/project-5/5-0.jpg",
-      "url": "/project-5"
+      "url": "/project-5",
+      "alt": "Security questions - Design of a new feature for the bank's mobile application"
     },
     {
       "id": "6",
       "title": "Routing control",
       "description": "The main task of the project is to create an interface for the bank's technical support service, which is responsible for installing new application releases and troubleshooting. To configure and redirect traffic between data centers (DC), you need to access the code using different applications. It's tedious and inconvenient. The new UI can switch traffic between DC's when we have an accident with one of them (when one of the DC's is offline), when we want to start beta testing, or when we want to do a smooth rollout of the new release.",
       "imageSrc": "../img/project-6/6-0.jpg",
-      "url": "/project-6"
+      "url": "/project-6",
+      "alt": "Routing control - Interface for configuring and redirecting traffic between data centers (DC) for the bank's technical support service"
     },
     {
       "id": "64565912-3f25-4c21-8a6b-bb372a08a2c8",
       "title": "Grocery delivery app",
       "description": "Design of a popular application with millions of users. Coming soon",
       "imageSrc": "../img/project-7/7-0.jpg",
-      "url": "/"
+      "url": "/",
+      "alt": "Grocery delivery app - Design of a popular application with millions of users"
     }
   ],
   "services": [

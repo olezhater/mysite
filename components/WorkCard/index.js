@@ -1,6 +1,6 @@
 import React from "react";
 
-const WorkCard = ({ img, name, description, onClick, isHomepage }) => {
+const WorkCard = ({ img, name, description, onClick, isHomepage, alt }) => {
   const truncatedDescription = description?.length > 160 ? `${description.slice(0, 160)}...` : description;
 
   return (
@@ -13,7 +13,7 @@ const WorkCard = ({ img, name, description, onClick, isHomepage }) => {
         style={{ height: "600px" }}
       >
         <img
-          alt={name}
+          alt={alt}
           className="h-full w-full object-cover hover:scale-110 transition-all ease-out duration-300"
           src={img}
         />
