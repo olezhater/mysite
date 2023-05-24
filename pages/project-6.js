@@ -20,14 +20,14 @@ const ProjectSix = () => {
       <div className="container mx-auto my-10">
         <h1 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">{project.title}</h1>
         <p className="my-5">{project.description}</p>
-        <img src="../img/project-6/6-1.png" className="w-full" />
-        <img src="../img/project-6/6-2.png" className="w-full" />
-        <img src="../img/project-6/6-3.png" className="w-full" />
-        <img src="../img/project-6/6-4.png" className="w-full" />
-        <img src="../img/project-6/6-5.png" className="w-full" />
-        <img src="../img/project-6/6-6.png" className="w-full" />
-        <img src="../img/project-6/6-7.png" className="w-full" />
-        <img src="../img/project-6/6-8.png" className="w-full" />
+        <img src="../img/project-6/6-1.png" className="w-full" alt="The project's main task is to create an interface for the bank's technical support service, enabling installation of new releases and troubleshooting. It simplifies traffic configuration and redirection between data centers, eliminating the need for multiple applications. The new UI allows seamless traffic switching in case of offline data centers, beta testing, or smooth release rollouts."/>
+        <img src="../img/project-6/6-2.png" className="w-full" alt="Process Design Thinking: We need to understand how a serial exchange works with the Gateway, show the process immediately after pressing the command execution button, provide successful statuses for user assurance, allow error message redirection to settings for quick fixes, create the first prototype for the Gateway Settings page, ensure up-to-date data in the interface without constant application switching, accommodate technical limitations of data processing centers, and enable users to continuously verify configuration relevance in another application."/>
+        <img src="../img/project-6/6-3.png" className="w-full" alt="First prototype"/>
+        <img src="../img/project-6/6-4.png" className="w-full" alt="wireframes and sitemap"/>
+        <img src="../img/project-6/6-5.png" className="w-full" alt="During layout creation, working with a large volume of data was required. The content provided could be altered weekly by architects, necessitating design layout modifications. To ensure realistic prototypes for approval and testing, I discovered and utilized the Figma plugin, Google Sheets Sync. By creating a table and sharing it with the architects, I established my own backend system for layouts."/>
+        <img src="../img/project-6/6-6.png" className="w-full" alt="user interface"/>
+        <img src="../img/project-6/6-7.png" className="w-full" alt="Pages redesigned for presentation using the Vienna design system by Raiffeisen bank. Utilized vibrant colors and well-crafted components"/>
+        <img src="../img/project-6/6-8.png" className="w-full" alt="prototype is below"/>
         <div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
             <iframe
                 src="https://player.vimeo.com/video/722856848?autoplay=1&loop=1&muted=0&portrait=0&byline=0&h=2697d04fbb&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"

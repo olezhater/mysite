@@ -20,10 +20,10 @@ const ProjectTwo = () => {
       <div className="container mx-auto my-10">
         <h1 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">{project.title}</h1>
         <p className="my-5">{project.description}</p>
-        <img src="../img/project-2/2-1.png" className="w-full" />
-        <img src="../img/project-2/2-2.png" className="w-full" />
-        <img src="../img/project-2/2-3.png" className="w-full" />
-        <img src="../img/project-2/2-4.png" className="w-full" />
+        <img src="../img/project-2/2-1.png" className="w-full" alt="ux design. Problems, Tasks, Manifest, Animation, SEO, Colors & Fonts, Wireframes, User flow"/>
+        <img src="../img/project-2/2-2.png" className="w-full" alt="Responsive site development, prioritizing mobile devices due to high user traffic and low engagement on desktop. Limited content on the adaptive version hampers information accessibility. Analytics indicate majority of users access the site via mobile devices, resulting in low visitation and limited relevant search engine traffic. High bounce rate observed."/>
+        <img src="../img/project-2/2-3.png" className="w-full" alt="Animation options: GIF, mp4, CSS, JS, JSON. GIF has a drawback of large file size. mp4 requires additional solutions for playback and customization. CSS, JS have a drawback of longer development time. JSON is a format for saving simple animations in After Effects and exporting to lottiefiles. Animations can be embedded on the website either as a JSON file or as a link for lottie player."/>
+        <img src="../img/project-2/2-4.png" className="w-full" alt="colors and fonts"/>
         <div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
             <iframe
                 src="https://player.vimeo.com/video/741775484?autoplay=1&loop=1&muted=0&portrait=0&byline=0&h=2697d04fbb&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"

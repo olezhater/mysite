@@ -20,13 +20,13 @@ const ProjectThree = () => {
       <div className="container mx-auto my-10">
         <h1 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">{project.title}</h1>
         <p className="my-5">{project.description}</p>
-        <img src="../img/project-3/3-1.png" className="w-full" />
-        <img src="../img/project-3/3-2.png" className="w-full" />
-        <img src="../img/project-3/3-3.png" className="w-full" />
-        <img src="../img/project-3/3-4.png" className="w-full" />
-        <img src="../img/project-3/3-5.gif" className="w-full" />
-        <img src="../img/project-3/3-6.png" className="w-full" />
-        <img src="../img/project-3/3-7.gif" className="w-full" />
+        <img src="../img/project-3/3-1.png" className="w-full" alt="Hearing Impaired Alarm app"/>
+        <img src="../img/project-3/3-2.png" className="w-full" alt="user story map"/>
+        <img src="../img/project-3/3-3.png" className="w-full" alt="wireframing"/>
+        <img src="../img/project-3/3-4.png" className="w-full" alt="mix wireframes, story map"/>
+        <img src="../img/project-3/3-5.gif" className="w-full" alt="prototype gif"/>
+        <img src="../img/project-3/3-6.png" className="w-full" alt="font and colors"/>
+        <img src="../img/project-3/3-7.gif" className="w-full" alt="prototype gif"/>
         <h2 className="mt-40 text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">You May also like</h2>
         <div className="mt-5 grid grid-cols-1 tablet:grid-cols-3 gap-4">
           {reversedProjects.map((p) => (
