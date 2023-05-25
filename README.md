@@ -1,79 +1,11 @@
-![thumbnail](https://user-images.githubusercontent.com/16558205/180779213-ea740975-3df1-460a-a964-0a623ee25872.png)
-
-### Live - https://react-portfolio-template.netlify.app/
-
-### Demo Video - https://www.youtube.com/watch?v=62_HLbx2zLQ&t=9s
-
-### Tutorials
-
-Youtube - https://www.youtube.com/watch?v=8cmJ2kR4SpM
-
-Blog - https://blog.chetanverma.com/how-to-build-a-portfolio-website-using-nextjs-and-tailwindcss
-
-### Features - 
-
-- Modern Stack (Next.js + TailwindCSS)
-- Minimal Design
-- Easy To Browse
-- Easy To Customize your details With GUI
-- Blog Crud (Create, Read, Update, Delete blog with easy to use UI).
-- Dark Mode
+Hi there!
+Hi, my name is Oleg Teretenko and I am a Product Designer. I have been passionate about design since 2015 and obtained my Master's degree in Engineering and Technology from Krasnoyarsk, Russia. (However, I am currently not residing in Russia.) I also have certificates in Mail Group UX/UI design, Yandex HTML & CSS, GoPractice Product metrics.  Currently, I am working as a Product Designer for a major retail company, where I focus on a mobile application used by millions of users for grocery delivery. In my role, I prioritize user needs by analyzing product metrics and user feedback to enhance the app's user flow and overall experience. I like generate new ideas and concepts to continuously improve user experience.  My work experience includes designing interfaces for banking products used by 15 million users in fintech, including customer support and configuring bank services. I also have extensive experience in designing for edtech.  When I'm not working, I enjoy playing and listening to music, watching movies and series, and exploring new places. I'm always interested in connecting with like-minded individuals and collaborating on exciting projects.
 
 
-### Sections
+### linkedin - https://www.linkedin.com/in/teretenko//
 
-- Header
-- Work
-- Services
-- About
-- Contact
-- Markdown Blog
+### behance - https://www.behance.net/teretenko
 
-
-### How To Use
-
-- Clone this repo
-- run `yarn`
-- `yarn dev`
-
-
-### How To Deploy - 
-
-- There are many ways to Deploy this repo.
-- here we are gonna use netlify
-- Login into netlify with github
-- after login select the forked repo or the repo you want to deploy
-- after selecting netlify will automatially deploy your website.
-
-Quickes way to deploy this repo - 
-
-[![Deploy To Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/chetanverma16/react-portfolio-template)
-
-
-### How To Contribute - 
-
-I would be very happy to review your PRs and all the awesome things that you can improve on this portfolio.
-
-
-### Tech Stack Used - 
-- Next.js
-- TailwindCSS
-
-
-### Thanks
-
-If you liked this portfolio template, don't forget to give it a ⭐.
-
-## Awesome Contributors
-[@Aryan3212](https://github.com/Aryan3212) [@achu-krishna](https://github.com/achu-krishna)
-
-## Supporting
-Many hours of hard work have gone into this project. Your support will be very appreciated!
-
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/chetanverma)
-
-
-
-
+### facebook - https://www.facebook.com/oleg.teretenko
 
 

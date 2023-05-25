@@ -1,3 +1,4 @@
+import Head from "next/head";
 import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -16,6 +17,12 @@ const ProjectFive = () => {
   return (
     <div className={`relative ${data.showCursor && "cursor-none"}`}>
       {data.showCursor && <Cursor />}
+
+      <Head>
+        <title>{project.alt}</title>
+        <meta name="description" content={project.description} />
+      </Head>
+
       <Header isBlog/>
       <div className="container mx-auto my-10">
         <h1 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">{project.title}</h1>

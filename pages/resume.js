@@ -1,3 +1,4 @@
+import Head from "next/head";
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Cursor from "../components/Cursor";
@@ -32,6 +33,12 @@ const Resume = () => {
         </div>
       )}
       {data.showCursor && <Cursor />}
+
+      <Head>
+        <title>{name}, Senior Product Designer - Resume, Download CV</title>
+        <meta name="description" content='I design intuitive interfaces for mobile and web applications, including a popular grocery delivery app for a major Russian retailer. With experience in fintech and edtech design, I prioritize user needs through data analysis, research, and user interviews.' />
+      </Head>
+
       <div
         className={`container mx-auto mb-10 ${
           data.showCursor && "cursor-none"
