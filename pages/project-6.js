@@ -37,7 +37,7 @@ const ProjectSix = () => {
         <img src="../img/project-6/6-8.png" className="w-full" alt="prototype is below"/>
         <div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
             <iframe
-                src="https://player.vimeo.com/video/722856848?autoplay=1&loop=1&muted=0&portrait=0&byline=0&h=2697d04fbb&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                src="https://player.vimeo.com/video/722856848?transparent=0&autoplay=1&loop=1&muted=0&portrait=0&byline=0&h=2697d04fbb&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                 allowFullScreen
                 style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
             />

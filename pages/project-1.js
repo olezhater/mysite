@@ -27,11 +27,11 @@ const ProjectOne = () => {
       <div className="container mx-auto my-10">
         <h1 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">{project.title}</h1>
         <p className="my-5">{project.description}</p>
-        <img src="../img/project-1/1-1.png" className="w-full" alt="neomorphic design. online shop"/>
-        <img src="../img/project-1/1-2.png" className="w-full" alt="font and colors for neomorphic design"/>
+        <img src="../img/project-1/1-1.png" className="w-full" style={{ backgroundColor: "#F2F3F6" }} alt="neomorphic design. online shop"/>
+        <img src="../img/project-1/1-2.png" className="w-full" style={{ backgroundColor: "#F2F3F6" }} alt="font and colors for neomorphic design"/>
         <div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
             <iframe
-                src="https://player.vimeo.com/video/741780118?autoplay=1&loop=1&muted=0&portrait=0&byline=0&h=2697d04fbb&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                src="https://player.vimeo.com/video/741780118?transparent=0&autoplay=1&loop=1&muted=0&portrait=0&byline=0&h=2697d04fbb&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                 allowFullScreen
                 style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
             />

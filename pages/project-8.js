@@ -7,8 +7,8 @@ import WorkCard from "../components/WorkCard";
 import data from "../data/portfolio.json";
 import Cursor from "../components/Cursor";
 
-const ProjectFour = () => {
-  const project = data.projects.find((p) => p.id === "4");
+const ProjectSix = () => {
+  const project = data.projects.find((p) => p.id === "8");
 
   const filteredProjects = data.projects.filter((p) => p.url !== project.url && p.id !== "64565912-3f25-4c21-8a6b-bb372a08a2c8");
   const totalProjects = filteredProjects.length;
@@ -22,29 +22,33 @@ const ProjectFour = () => {
         <title>{project.alt}</title>
         <meta name="description" content={project.description} />
       </Head>
-      
+
       <Header isBlog/>
       <div className="container mx-auto my-10">
         <h1 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">{project.title}</h1>
         <p className="my-5">{project.description}</p>
+        <img src="../img/project-8/8-1.png" className="w-full" alt="One of the top food retail chains"/>
+        <img src="../img/project-8/8-2.png" className="w-full" alt="Our design team utilized a new design system built with design tokens."/>
+        <img src="../img/project-8/8-3.png" className="w-full" alt="We anticipate that the online ordering feature will be sought after by 20% of the main app users"/>
         <div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
             <iframe
-                src="https://player.vimeo.com/video/724005143?transparent=0&autoplay=1&loop=1&muted=0&portrait=0&byline=0&h=2697d04fbb&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                src="https://player.vimeo.com/video/850056480?transparent=0&autoplay=1&loop=1&muted=0&portrait=0&byline=0&h=2697d04fbb&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                 allowFullScreen
                 style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
             />
         </div>
+        <img src="../img/project-8/8-5.png" className="w-full" alt="Design Research Unveils Valuable Insights"/>
         <h2 className="mt-40 text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">You May also like</h2>
         <div className="mt-5 grid grid-cols-1 tablet:grid-cols-3 gap-4">
           {reversedProjects.map((p) => (
             <WorkCard
-              key={p.id}
-              img={p.imageSrc}
-              name={p.title}
-              description={p.description}
-              isHomepage={true}
-              onClick={() => window.location.href = p.url}
-            />
+                key={p.id}
+                img={p.imageSrc}
+                name={p.title}
+                description={p.description}
+                isHomepage={true}
+                onClick={() => window.location.href = p.url}
+          />
           ))}
         </div>
       </div>
@@ -53,4 +57,4 @@ const ProjectFour = () => {
   );
 };
 
-export default ProjectFour;
+export default ProjectSix;
