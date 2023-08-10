@@ -98,6 +98,25 @@ export default function Home() {
           <h1 className="text-2xl text-bold">Work.</h1>
 
           <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
+            {[
+              ...data.projects.slice(0, 6),
+              data.projects[7], // Project with id 8
+              data.projects[6], // Project with id 7
+            ].reverse().map((project) => (
+              <WorkCard
+                key={project.id}
+                img={project.imageSrc}
+                name={project.title}
+                description={project.description}
+                isHomepage={true}
+                onClick={() => window.location.href = project.url}
+                alt={project.alt}
+              />
+            ))}
+          </div>
+
+{/* 
+<div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
           {data.projects.slice(0).reverse().map((project) => (
             <WorkCard
               key={project.id}
@@ -109,7 +128,9 @@ export default function Home() {
               alt={project.alt}
             />
           ))}
-          </div>
+</div>
+*/}
+
         </div>
 
         {/*<div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
