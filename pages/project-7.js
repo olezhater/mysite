@@ -27,6 +27,14 @@ const ProjectSix = () => {
       <div className="container mx-auto my-10">
         <h1 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">{project.title}</h1>
         <p className="my-5">{project.description}</p>
+        <div className="flex items-center gap-2 mb-1em">
+          <a href="https://apps.apple.com/ru/app/магнит-акции-и-скидки/id881463973" target="_blank" rel="noopener noreferrer">
+            <img src="../img/project-7/download_appstore.png" alt="Download on the App Store" style={{ width: '120px', marginBottom: '1em' }} />
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=ru.tander.magnit&hl=ru&pli=1" target="_blank" rel="noopener noreferrer">
+            <img src="../img/project-7/download_googleplay.png" alt="Get it on Google Play" style={{ width: '120px', marginBottom: '1em' }} />
+          </a>
+        </div>
         <img src="../img/project-7/7-1.png" className="w-full" alt="One of the top food retail chains"/>
         <img src="../img/project-7/7-2.png" className="w-full" alt="Our design team utilized a new design system built with design tokens."/>
         <img src="../img/project-7/7-3.png" className="w-full" alt="We anticipate that the online ordering feature will be sought after by 20% of the main app users"/>
