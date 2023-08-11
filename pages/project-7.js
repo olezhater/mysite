@@ -36,11 +36,13 @@ const ProjectSix = () => {
           </a>
         </div>
         <img src="../img/project-7/7-1.png" className="w-full" alt="One of the top food retail chains"/>
-        <img src="../img/project-7/7-2.png" className="w-full" alt="Our design team utilized a new design system built with design tokens."/>
-        <img src="../img/project-7/7-3.png" className="w-full" alt="We anticipate that the online ordering feature will be sought after by 20% of the main app users"/>
-        <img src="../img/project-7/7-4.png" className="w-full" alt="Key Customer Journey Map Areas"/>
-        <img src="../img/project-7/7-5.png" className="w-full" alt="Design Research Unveils Valuable Insights"/>
-        <img src="../img/project-7/7-6.png" className="w-full" alt="User interface delivery app cart and checkout"/>
+        <img src="../img/project-7/7-2.png" className="w-full" alt="UX Challenge"/>
+        <img src="../img/project-7/7-3.png" className="w-full" alt="Our design team utilized a new design system built with design tokens"/>
+        <img src="../img/project-7/7-4.png" className="w-full" alt="We anticipate that the online ordering feature will be sought after by 20% of the main app users"/>
+        <img src="../img/project-7/7-5.png" className="w-full" alt="Key Customer Journey Map Areas"/>
+        <img src="../img/project-7/7-6.png" className="w-full" alt="Ideate and Prototype"/>
+        <img src="../img/project-7/7-7.png" className="w-full" alt="Design Research Unveils Valuable Insights"/>
+        <img src="../img/project-7/7-8.png" className="w-full" alt="User interface delivery app cart and checkout"/>
         <div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
             <iframe
                 src="https://player.vimeo.com/video/849881203?transparent=0&autoplay=1&loop=1&muted=0&portrait=0&byline=0&h=2697d04fbb&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
