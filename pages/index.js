@@ -99,9 +99,9 @@ export default function Home() {
 
           <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
             {[
-              ...data.projects.slice(0, 6),
-              data.projects[7], // Project with id 8
-              data.projects[6], // Project with id 7
+              ...data.projects.slice(0, 3),
+              data.projects[4], // Project with id 5
+              data.projects[3], // Project with id 4
             ].reverse().map((project) => (
               <WorkCard
                 key={project.id}
@@ -111,10 +111,13 @@ export default function Home() {
                 isHomepage={true}
                 onClick={() => window.location.href = project.url}
                 alt={project.alt}
+                className={project.id === "4" ? 'laptop:col-span-2 tablet:col-span-2' : ''}
               />
             ))}
           </div>
-
+          <div className="mx-auto mt-20 text-center">
+            <Button type="primary" onClick={() => window.open("https://www.behance.net/teretenko")}>View earlier projects on Behance</Button>
+          </div>
 {/* 
 <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
           {data.projects.slice(0).reverse().map((project) => (
