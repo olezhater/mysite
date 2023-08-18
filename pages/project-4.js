@@ -60,6 +60,7 @@ const ProjectSix = () => {
                 description={p.description}
                 isHomepage={true}
                 onClick={() => window.location.href = p.url}
+                style={{ transform: "none" }}
           />
           ))}
         </div>
