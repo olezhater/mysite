@@ -24,7 +24,7 @@ const ProjectSix = () => {
       </Head>
 
       <Header isBlog/>
-      <div className="container mx-auto my-10">
+      <div className="container mx-auto my-10 laptop:px-10">
         <h1 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">{project.title}</h1>
         <p className="my-5">{project.description}</p>
         <img src="../img/project-3/3-1.png" className="w-full" alt="The project's main task is to create an interface for the bank's technical support service, enabling installation of new releases and troubleshooting. It simplifies traffic configuration and redirection between data centers, eliminating the need for multiple applications. The new UI allows seamless traffic switching in case of offline data centers, beta testing, or smooth release rollouts."/>

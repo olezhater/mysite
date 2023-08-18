@@ -24,7 +24,7 @@ const ProjectSix = () => {
       </Head>
 
       <Header isBlog/>
-      <div className="container mx-auto my-10">
+      <div className="container mx-auto my-10 laptop:px-10">
         <h1 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">{project.title}</h1>
         <p className="my-5">{project.description}</p>
         <img src="../img/project-5/5-1.png" className="w-full" alt="What We Implemented and the Problems Solved"/>
