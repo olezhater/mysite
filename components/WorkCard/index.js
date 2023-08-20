@@ -18,7 +18,7 @@ const WorkCard = ({ img, name, description, onClick, isHomepage, alt, className,
     };
   }, []);
 
-  const transformValue = enableParallax ? `translateY(${-scrollOffset * 0.2}px)` : 'none';
+  const transformValue = enableParallax ? `translateY(${-scrollOffset * 0.3}px)` : 'none';
 
   return (
     <div
@@ -31,7 +31,7 @@ const WorkCard = ({ img, name, description, onClick, isHomepage, alt, className,
           height: "600px",
           position: "relative",
           overflow: "hidden",
-          boxShadow: theme === "dark" ? "0 0 12px rgba(0, 0, 0, 0.8)" : "0 0 12px rgba(0, 0, 0, 0.3)",
+          boxShadow: theme === "dark" ? "0 0 12px rgba(13, 10, 44, 0.6)" : "0 0 12px rgba(33, 24, 81, 0.5)",
         }}
       >
         <img
@@ -49,7 +49,7 @@ const WorkCard = ({ img, name, description, onClick, isHomepage, alt, className,
             top: "0",
             left: "0",
             transform: transformValue,
-            backgroundImage: `url('../images/card-bg.png')`,
+            backgroundImage: `url('../images/card-bg.jpg')`,
             backgroundPosition: "center",
             backgroundSize: "cover",
             width: "100%",
