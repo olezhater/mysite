@@ -42,7 +42,7 @@ const ProjectSix = () => {
         </div>
         <div className="pt-16 laptop:px-6 tablet:px-4">
           <h2 className="text-3xl mt-5 font-bold">Introduction</h2>
-          <h2 className="text-xl my-5">In this presentation, I will give you an overview of what I've been working on at Magnit recently. Specifically, the exciting new major update of the Magnit app, which now includes the features of the Magnit Delivery app. But first, let's take a look at some key figures that define Magnit as a company.</h2>
+          <h2 className="text-xl my-5">In this presentation, I will give you an overview of what I&apos;ve been working on at Magnit recently. Specifically, the exciting new major update of the Magnit app, which now includes the features of the Magnit Delivery app. But first, let&apos;s take a look at some key figures that define Magnit as a company.</h2>
         </div>
           <img
             src={
@@ -172,7 +172,7 @@ const ProjectSix = () => {
         </div>
         <div className="pt-16 laptop:px-6 tablet:px-4">
           <h2 className="text-3xl mt-5 font-bold">Outcomes</h2>
-          <h2 className="text-xl my-5">By consolidating all major services in one app, we significantly enhance the shopping experience. Now, making an online order doesn't require downloading a separate app. We anticipate that the online ordering feature will be sought after by 20% of the main app users, which will significantly impact the company's profitability.</h2>
+          <h2 className="text-xl my-5">By consolidating all major services in one app, we significantly enhance the shopping experience. Now, making an online order doesn&apos;t require downloading a separate app. We anticipate that the online ordering feature will be sought after by 20% of the main app users, which will significantly impact the company&apos;s profitability.</h2>
           <h2 className="text-xl my-5">Below are several screens in a prototype</h2>
         </div>
         <div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
