@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from "react";
 import Head from "next/head";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -13,11 +14,16 @@ const { showProjectSix } = data;
 const ProjectSix = () => {
   const router = useRouter();
   const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
   const project = data.projects.find((p) => p.id === "4");
   
   const filteredProjects = data.projects.filter((p) => p.url !== project.url && p.id !== "64565912-3f25-4c21-8a6b-bb372a08a2c8");
   const totalProjects = filteredProjects.length;
   const reversedProjects = filteredProjects.slice(Math.max(totalProjects - 3, 0)).reverse();
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   return (
     <div className={`relative ${data.showCursor && "cursor-none"}`}>
@@ -46,9 +52,9 @@ const ProjectSix = () => {
         </div>
           <img
             src={
-              theme === "dark" 
-              ? "/img/project-4/4-1.png" 
-              : "/img/project-4/4-1w.png"
+              theme === "light" 
+              ? "/img/project-4/4-1w.png" 
+              : "/img/project-4/4-1.png"
             }
             className="w-full"
             alt="One of the top food retail chains"
@@ -59,9 +65,9 @@ const ProjectSix = () => {
         </div>
         <img
           src={
-            theme === "dark" 
-            ? "/img/project-4/4-2.png" 
-            : "/img/project-4/4-2w.png"
+            theme === "light" 
+            ? "/img/project-4/4-2w.png" 
+            : "/img/project-4/4-2.png"
           }
           className="w-full"
           alt="UX Challenge"
@@ -71,9 +77,9 @@ const ProjectSix = () => {
         </div>
         <img
           src={
-            theme === "dark" 
-            ? "/img/project-4/4-3.png" 
-            : "/img/project-4/4-3w.png"
+            theme === "light" 
+            ? "/img/project-4/4-3w.png" 
+            : "/img/project-4/4-3.png"
           }
           className="w-full"
           alt="My contributions"
@@ -84,18 +90,18 @@ const ProjectSix = () => {
         </div>
         <img
           src={
-            theme === "dark" 
-            ? "/img/project-4/4-4.png" 
-            : "/img/project-4/4-4w.png"
+            theme === "light" 
+            ? "/img/project-4/4-4w.png" 
+            : "/img/project-4/4-4.png"
           }
           className="w-full"
           alt="Discover and Empathize"
         />
         <img
           src={
-            theme === "dark" 
-            ? "/img/project-4/4-5.png" 
-            : "/img/project-4/4-5w.png"
+            theme === "light" 
+            ? "/img/project-4/4-5w.png" 
+            : "/img/project-4/4-5.png"
           }
           className="w-full"
           alt="Discover and Empathize"
@@ -106,18 +112,18 @@ const ProjectSix = () => {
         </div>
         <img
           src={
-            theme === "dark" 
-            ? "/img/project-4/4-6.png" 
-            : "/img/project-4/4-6w.png"
+            theme === "light" 
+            ? "/img/project-4/4-6w.png" 
+            : "/img/project-4/4-6.png"
           }
           className="w-full"
           alt="Ideate and Prototype"
         />
         <img
           src={
-            theme === "dark" 
-            ? "/img/project-4/4-7.png" 
-            : "/img/project-4/4-7w.png"
+            theme === "light" 
+            ? "/img/project-4/4-7w.png" 
+            : "/img/project-4/4-7.png"
           }
           className="w-full"
           alt="Ideate and Prototype"
@@ -128,9 +134,9 @@ const ProjectSix = () => {
         </div>
         <img
           src={
-            theme === "dark" 
-            ? "/img/project-4/4-8.png" 
-            : "/img/project-4/4-8w.png"
+            theme === "light" 
+            ? "/img/project-4/4-8w.png" 
+            : "/img/project-4/4-8.png"
           }
           className="w-full"
           width="100%" 
@@ -139,9 +145,9 @@ const ProjectSix = () => {
         />
         <img
           src={
-            theme === "dark" 
-            ? "/img/project-4/4-9.png" 
-            : "/img/project-4/4-9w.png"
+            theme === "light" 
+            ? "/img/project-4/4-9w.png" 
+            : "/img/project-4/4-9.png"
           }
           className="w-full"
           alt="UI components"
@@ -151,18 +157,18 @@ const ProjectSix = () => {
         </div>
         <img
           src={
-            theme === "dark" 
-            ? "/img/project-4/4-10.png" 
-            : "/img/project-4/4-10w.png"
+            theme === "light" 
+            ? "/img/project-4/4-10w.png" 
+            : "/img/project-4/4-10.png"
           }
           className="w-full"
           alt="Prototype and Results"
         />
         <img
           src={
-            theme === "dark" 
-            ? "/img/project-4/4-11.png" 
-            : "/img/project-4/4-11w.png"
+            theme === "light" 
+            ? "/img/project-4/4-11w.png" 
+            : "/img/project-4/4-11.png"
           }
           className="w-full"
           alt="User interface delivery app cart and checkout"
@@ -188,9 +194,9 @@ const ProjectSix = () => {
         </div>
         <img
           src={
-            theme === "dark" 
-            ? "/img/project-4/4-12.png" 
-            : "/img/project-4/4-12w.png"
+            theme === "light" 
+            ? "/img/project-4/4-12w.png" 
+            : "/img/project-4/4-12.png"
           }
           className="w-full"
           alt="Our design team utilized a new design system built with design tokens"

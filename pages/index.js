@@ -87,7 +87,7 @@ export default function Home() {
             <h1
               ref={textFour}
               className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 font-extrabold w-full laptop:w-4/5"
-              style={{ lineHeight: '1.13' }}
+              style={{ lineHeight: '1.25' }}
             >
               {data.headerTaglineFour}
             </h1>
