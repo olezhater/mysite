@@ -1,5 +1,6 @@
 import Head from "next/head";
 import React, { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ServiceCard from "../components/ServiceCard";
@@ -8,8 +9,10 @@ import data from "../data/portfolio.json";
 import Cursor from "../components/Cursor";
 import { useTheme } from "next-themes";
 
+const { showProjectSix } = data;
 
 const ProjectSix = () => {
+  const router = useRouter();
   const theme = useTheme();
   const [mount, setMount] = useState(false);
   const project = data.projects.find((p) => p.id === "4");
@@ -20,6 +23,9 @@ const ProjectSix = () => {
 
 useEffect(() => {
   setMount(true);
+  if (!showProjectSix) {
+    router.push("/project-4");
+  }
 }, []);
 
   return (
