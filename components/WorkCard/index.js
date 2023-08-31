@@ -18,7 +18,7 @@ const WorkCard = ({ img, name, description, onClick, isHomepage, alt, className,
     };
   }, []);
 
-  const transformValue = enableParallax ? `translateY(${-scrollOffset * 0.2}px)` : 'none';
+  const transformValue = enableParallax ? `translateY(${-scrollOffset * 0.4}px)` : 'none';
 
   return (
     <div
@@ -53,7 +53,7 @@ const WorkCard = ({ img, name, description, onClick, isHomepage, alt, className,
             backgroundPosition: "center",
             backgroundSize: "cover",
             width: "100%",
-            height: "250%",
+            height: "400%",
             zIndex: "-1",
           }}
         />
