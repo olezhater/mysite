@@ -1,6 +1,4 @@
 import Head from "next/head";
-import React, { useEffect, useState } from "react";
-import { useRouter } from "next/router";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ServiceCard from "../components/ServiceCard";
@@ -8,26 +6,18 @@ import WorkCard from "../components/WorkCard";
 import data from "../data/portfolio.json";
 import Cursor from "../components/Cursor";
 import { useTheme } from "next-themes";
+import { useRouter } from "next/router";
 
 const { showProjectSix } = data;
 
 const ProjectSix = () => {
   const router = useRouter();
-  const theme = useTheme();
-  const [mount, setMount] = useState(false);
+  const { theme } = useTheme();
   const project = data.projects.find((p) => p.id === "4");
   
   const filteredProjects = data.projects.filter((p) => p.url !== project.url && p.id !== "64565912-3f25-4c21-8a6b-bb372a08a2c8");
   const totalProjects = filteredProjects.length;
   const reversedProjects = filteredProjects.slice(Math.max(totalProjects - 3, 0)).reverse();
-  
-
-  useEffect(() => {
-    setMount(true);
-    if (!showProjectSix) {
-      router.push("/project-4");
-    }
-  }, [router, showProjectSix]);
 
   return (
     <div className={`relative ${data.showCursor && "cursor-none"}`}>
@@ -55,11 +45,10 @@ const ProjectSix = () => {
           <h2 className="text-xl my-5">In this presentation, I will give you an overview of what I've been working on at Magnit recently. Specifically, the exciting new major update of the Magnit app, which now includes the features of the Magnit Delivery app. But first, let's take a look at some key figures that define Magnit as a company.</h2>
         </div>
           <img
-            conteiner
             src={
-              mount && theme.theme === "dark"
-                ? "/img/project-4/4-1.png"
-                : "/img/project-4/4-1w.png"
+              theme === "dark" 
+              ? "/img/project-4/4-1.png" 
+              : "/img/project-4/4-1w.png"
             }
             className="w-full"
             alt="One of the top food retail chains"
@@ -70,9 +59,9 @@ const ProjectSix = () => {
         </div>
         <img
           src={
-            mount && theme.theme === "dark"
-              ? "/img/project-4/4-2.png"
-              : "/img/project-4/4-2w.png"
+            theme === "dark" 
+            ? "/img/project-4/4-2.png" 
+            : "/img/project-4/4-2w.png"
           }
           className="w-full"
           alt="UX Challenge"
@@ -82,9 +71,9 @@ const ProjectSix = () => {
         </div>
         <img
           src={
-            mount && theme.theme === "dark"
-              ? "/img/project-4/4-3.png"
-              : "/img/project-4/4-3w.png"
+            theme === "dark" 
+            ? "/img/project-4/4-3.png" 
+            : "/img/project-4/4-3w.png"
           }
           className="w-full"
           alt="My contributions"
@@ -95,18 +84,18 @@ const ProjectSix = () => {
         </div>
         <img
           src={
-            mount && theme.theme === "dark"
-              ? "/img/project-4/4-4.png"
-              : "/img/project-4/4-4w.png"
+            theme === "dark" 
+            ? "/img/project-4/4-4.png" 
+            : "/img/project-4/4-4w.png"
           }
           className="w-full"
           alt="Discover and Empathize"
         />
         <img
           src={
-            mount && theme.theme === "dark"
-              ? "/img/project-4/4-5.png"
-              : "/img/project-4/4-5w.png"
+            theme === "dark" 
+            ? "/img/project-4/4-5.png" 
+            : "/img/project-4/4-5w.png"
           }
           className="w-full"
           alt="Discover and Empathize"
@@ -117,18 +106,18 @@ const ProjectSix = () => {
         </div>
         <img
           src={
-            mount && theme.theme === "dark"
-              ? "/img/project-4/4-6.png"
-              : "/img/project-4/4-6w.png"
+            theme === "dark" 
+            ? "/img/project-4/4-6.png" 
+            : "/img/project-4/4-6w.png"
           }
           className="w-full"
           alt="Ideate and Prototype"
         />
         <img
           src={
-            mount && theme.theme === "dark"
-              ? "/img/project-4/4-7.png"
-              : "/img/project-4/4-7w.png"
+            theme === "dark" 
+            ? "/img/project-4/4-7.png" 
+            : "/img/project-4/4-7w.png"
           }
           className="w-full"
           alt="Ideate and Prototype"
@@ -139,9 +128,9 @@ const ProjectSix = () => {
         </div>
         <img
           src={
-            mount && theme.theme === "dark"
-              ? "/img/project-4/4-8.png"
-              : "/img/project-4/4-8w.png"
+            theme === "dark" 
+            ? "/img/project-4/4-8.png" 
+            : "/img/project-4/4-8w.png"
           }
           className="w-full"
           width="100%" 
@@ -150,9 +139,9 @@ const ProjectSix = () => {
         />
         <img
           src={
-            mount && theme.theme === "dark"
-              ? "/img/project-4/4-9.png"
-              : "/img/project-4/4-9w.png"
+            theme === "dark" 
+            ? "/img/project-4/4-9.png" 
+            : "/img/project-4/4-9w.png"
           }
           className="w-full"
           alt="UI components"
@@ -162,18 +151,18 @@ const ProjectSix = () => {
         </div>
         <img
           src={
-            mount && theme.theme === "dark"
-              ? "/img/project-4/4-10.png"
-              : "/img/project-4/4-10w.png"
+            theme === "dark" 
+            ? "/img/project-4/4-10.png" 
+            : "/img/project-4/4-10w.png"
           }
           className="w-full"
           alt="Prototype and Results"
         />
         <img
           src={
-            mount && theme.theme === "dark"
-              ? "/img/project-4/4-11.png"
-              : "/img/project-4/4-11w.png"
+            theme === "dark" 
+            ? "/img/project-4/4-11.png" 
+            : "/img/project-4/4-11w.png"
           }
           className="w-full"
           alt="User interface delivery app cart and checkout"
@@ -199,9 +188,9 @@ const ProjectSix = () => {
         </div>
         <img
           src={
-            mount && theme.theme === "dark"
-              ? "/img/project-4/4-12.png"
-              : "/img/project-4/4-12w.png"
+            theme === "dark" 
+            ? "/img/project-4/4-12.png" 
+            : "/img/project-4/4-12w.png"
           }
           className="w-full"
           alt="Our design team utilized a new design system built with design tokens"
