@@ -22,12 +22,12 @@ const ProjectSix = () => {
   const reversedProjects = filteredProjects.slice(Math.max(totalProjects - 3, 0)).reverse();
   
 
-useEffect(() => {
-  setMount(true);
-  if (!showProjectSix) {
-    router.push("/project-4");
-  }
-}, [router]); 
+  useEffect(() => {
+    setMount(true);
+    if (!showProjectSix) {
+      router.push("/project-4");
+    }
+  }, [router, showProjectSix]);
 
   return (
     <div className={`relative ${data.showCursor && "cursor-none"}`}>
