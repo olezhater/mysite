@@ -16,10 +16,11 @@ const ProjectSix = () => {
   const theme = useTheme();
   const [mount, setMount] = useState(false);
   const project = data.projects.find((p) => p.id === "4");
-
+  
   const filteredProjects = data.projects.filter((p) => p.url !== project.url && p.id !== "64565912-3f25-4c21-8a6b-bb372a08a2c8");
   const totalProjects = filteredProjects.length;
   const reversedProjects = filteredProjects.slice(Math.max(totalProjects - 3, 0)).reverse();
+  
 
 useEffect(() => {
   setMount(true);
@@ -43,25 +44,26 @@ useEffect(() => {
         <p className="my-5">{project.description}</p>
         <div className="flex items-center gap-2 mb-1em">
           <a href="https://apps.apple.com/ru/app/магнит-акции-и-скидки/id881463973" target="_blank" rel="noopener noreferrer">
-            <img src="../img/project-4/download_appstore.png" alt="Download on the App Store" style={{ width: '120px', marginBottom: '1em' }} />
+            <img src="/img/project-4/download_appstore.png" alt="Download on the App Store" style={{ width: '120px', marginBottom: '1em' }} />
           </a>
           <a href="https://play.google.com/store/apps/details?id=ru.tander.magnit&hl=ru&pli=1" target="_blank" rel="noopener noreferrer">
-            <img src="../img/project-4/download_googleplay.png" alt="Get it on Google Play" style={{ width: '120px', marginBottom: '1em' }} />
+            <img src="/img/project-4/download_googleplay.png" alt="Get it on Google Play" style={{ width: '120px', marginBottom: '1em' }} />
           </a>
         </div>
         <div className="pt-16 laptop:px-6 tablet:px-4">
           <h2 className="text-3xl mt-5 font-bold">Introduction</h2>
           <h2 className="text-xl my-5">In this presentation, I will give you an overview of what I've been working on at Magnit recently. Specifically, the exciting new major update of the Magnit app, which now includes the features of the Magnit Delivery app. But first, let's take a look at some key figures that define Magnit as a company.</h2>
         </div>
-        <img
-          src={
-            mount && theme.theme === "dark"
-              ? "../img/project-4/4-1.png"
-              : "../img/project-4/4-1w.png"
-          }
-          className="w-full"
-          alt="One of the top food retail chains"
-        />
+          <img
+            conteiner
+            src={
+              mount && theme.theme === "dark"
+                ? "/img/project-4/4-1.png"
+                : "/img/project-4/4-1w.png"
+            }
+            className="w-full"
+            alt="One of the top food retail chains"
+          />
         <div className="pt-16 laptop:px-6 tablet:px-4">
           <h2 className="text-3xl mt-5 font-bold">The Challenge</h2>
           <h2 className="text-xl my-5">Magnit Company faces the challenge of managing two applications: Magnit Sales and Discounts, and Magnit Delivery. The decision has been made to merge these two applications and integrate the delivery feature into the primary Magnit app.</h2>
@@ -69,8 +71,8 @@ useEffect(() => {
         <img
           src={
             mount && theme.theme === "dark"
-              ? "../img/project-4/4-2.png"
-              : "../img/project-4/4-2w.png"
+              ? "/img/project-4/4-2.png"
+              : "/img/project-4/4-2w.png"
           }
           className="w-full"
           alt="UX Challenge"
@@ -81,8 +83,8 @@ useEffect(() => {
         <img
           src={
             mount && theme.theme === "dark"
-              ? "../img/project-4/4-3.png"
-              : "../img/project-4/4-3w.png"
+              ? "/img/project-4/4-3.png"
+              : "/img/project-4/4-3w.png"
           }
           className="w-full"
           alt="My contributions"
@@ -94,8 +96,8 @@ useEffect(() => {
         <img
           src={
             mount && theme.theme === "dark"
-              ? "../img/project-4/4-4.png"
-              : "../img/project-4/4-4w.png"
+              ? "/img/project-4/4-4.png"
+              : "/img/project-4/4-4w.png"
           }
           className="w-full"
           alt="Discover and Empathize"
@@ -103,8 +105,8 @@ useEffect(() => {
         <img
           src={
             mount && theme.theme === "dark"
-              ? "../img/project-4/4-5.png"
-              : "../img/project-4/4-5w.png"
+              ? "/img/project-4/4-5.png"
+              : "/img/project-4/4-5w.png"
           }
           className="w-full"
           alt="Discover and Empathize"
@@ -116,8 +118,8 @@ useEffect(() => {
         <img
           src={
             mount && theme.theme === "dark"
-              ? "../img/project-4/4-6.png"
-              : "../img/project-4/4-6w.png"
+              ? "/img/project-4/4-6.png"
+              : "/img/project-4/4-6w.png"
           }
           className="w-full"
           alt="Ideate and Prototype"
@@ -125,8 +127,8 @@ useEffect(() => {
         <img
           src={
             mount && theme.theme === "dark"
-              ? "../img/project-4/4-7.png"
-              : "../img/project-4/4-7w.png"
+              ? "/img/project-4/4-7.png"
+              : "/img/project-4/4-7w.png"
           }
           className="w-full"
           alt="Ideate and Prototype"
@@ -138,17 +140,19 @@ useEffect(() => {
         <img
           src={
             mount && theme.theme === "dark"
-              ? "../img/project-4/4-8.png"
-              : "../img/project-4/4-8w.png"
+              ? "/img/project-4/4-8.png"
+              : "/img/project-4/4-8w.png"
           }
           className="w-full"
+          width="100%" 
+          height="100%"
           alt="Testing"
         />
         <img
           src={
             mount && theme.theme === "dark"
-              ? "../img/project-4/4-9.png"
-              : "../img/project-4/4-9w.png"
+              ? "/img/project-4/4-9.png"
+              : "/img/project-4/4-9w.png"
           }
           className="w-full"
           alt="UI components"
@@ -159,8 +163,8 @@ useEffect(() => {
         <img
           src={
             mount && theme.theme === "dark"
-              ? "../img/project-4/4-10.png"
-              : "../img/project-4/4-10w.png"
+              ? "/img/project-4/4-10.png"
+              : "/img/project-4/4-10w.png"
           }
           className="w-full"
           alt="Prototype and Results"
@@ -168,8 +172,8 @@ useEffect(() => {
         <img
           src={
             mount && theme.theme === "dark"
-              ? "../img/project-4/4-11.png"
-              : "../img/project-4/4-11w.png"
+              ? "/img/project-4/4-11.png"
+              : "/img/project-4/4-11w.png"
           }
           className="w-full"
           alt="User interface delivery app cart and checkout"
@@ -196,8 +200,8 @@ useEffect(() => {
         <img
           src={
             mount && theme.theme === "dark"
-              ? "../img/project-4/4-12.png"
-              : "../img/project-4/4-12w.png"
+              ? "/img/project-4/4-12.png"
+              : "/img/project-4/4-12w.png"
           }
           className="w-full"
           alt="Our design team utilized a new design system built with design tokens"
