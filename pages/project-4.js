@@ -27,7 +27,7 @@ useEffect(() => {
   if (!showProjectSix) {
     router.push("/project-4");
   }
-}, []);
+}, [router]); 
 
   return (
     <div className={`relative ${data.showCursor && "cursor-none"}`}>
