@@ -17,7 +17,7 @@ const ProjectSix = () => {
   const filteredProjects = data.projects.filter((p) => p.url !== project.url && p.id !== "64565912-3f25-4c21-8a6b-bb372a08a2c8");
   const totalProjects = filteredProjects.length;
   const reversedProjects = filteredProjects.slice(Math.max(totalProjects - 3, 0)).reverse();
-  
+
 useEffect(() => {
   setMount(true);
 }, []);
@@ -148,7 +148,7 @@ useEffect(() => {
           alt="UI components"
         />
         <div className="pt-16 laptop:px-6 tablet:px-4">
-          <h2 className="text-3xl my-5 font-bold">Prototype - Round 2 ↩ and Results</h2>
+          <h2 className="text-3xl my-5 font-bold">Prototype - Round 2 | and Results</h2>
         </div>
         <img
           src={
