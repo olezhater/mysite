@@ -73,6 +73,7 @@ const ProjectSix = () => {
           ))}
         </div>
       </div>
+
       <Footer />
     </div>
   );
