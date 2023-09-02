@@ -27,15 +27,32 @@ const ProjectSix = () => {
       <div className="container mx-auto my-10 laptop:px-10">
         <h1 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">{project.title}</h1>
         <p className="my-5">{project.description}</p>
-        <img src="../img/project-3/3-1.png" className="w-full" alt="The project's main task is to create an interface for the bank's technical support service, enabling installation of new releases and troubleshooting. It simplifies traffic configuration and redirection between data centers, eliminating the need for multiple applications. The new UI allows seamless traffic switching in case of offline data centers, beta testing, or smooth release rollouts."/>
-        <img src="../img/project-3/3-2.png" className="w-full" alt="Process Design Thinking: We need to understand how a serial exchange works with the Gateway, show the process immediately after pressing the command execution button, provide successful statuses for user assurance, allow error message redirection to settings for quick fixes, create the first prototype for the Gateway Settings page, ensure up-to-date data in the interface without constant application switching, accommodate technical limitations of data processing centers, and enable users to continuously verify configuration relevance in another application."/>
-        <img src="../img/project-3/3-3.png" className="w-full" alt="First prototype"/>
+        <div className="pt-16 laptop:px-6 tablet:px-4">
+          <h2 className="text-3xl mt-5 font-bold">Introduction</h2>
+          <h2 className="text-xl my-5">The main task of the project is to create an interface for the bank&apos;s technical support service, which is responsible for installing new application releases and troubleshooting. To configure and redirect traffic between data centers (DC), you need to access the code using different applications. It&apos;s tedious and inconvenient.The new UI can switch traffic between DC&apos;s when we have an accident with one of them (when one of the DC&apos;s is offline), when we want to start beta testing, or when we want to do a smooth rollout of the new release.</h2>
+        </div>
+        <img src="../img/project-3/3-2.png" className="w-full" alt="The design was developed for another bank. The presentation describes only the core essence of the interface."/>
+        <div className="pt-16 laptop:px-6 tablet:px-4">
+          <h2 className="text-3xl my-5 font-bold">Design Thinking</h2>
+        </div>
+        <img src="../img/project-3/3-3.png" className="w-full" alt="Process Design Thinking: We need to understand how a serial exchange works with the Gateway"/>
+        <div className="pt-16 laptop:px-6 tablet:px-4">
+          <h2 className="text-3xl my-5 font-bold">Wireframes</h2>
+        </div>
         <img src="../img/project-3/3-4.png" className="w-full" alt="wireframes and sitemap"/>
-        <img src="../img/project-3/3-5.png" className="w-full" alt="During layout creation, working with a large volume of data was required. The content provided could be altered weekly by architects, necessitating design layout modifications. To ensure realistic prototypes for approval and testing, I discovered and utilized the Figma plugin, Google Sheets Sync. By creating a table and sharing it with the architects, I established my own backend system for layouts."/>
+        <div className="pt-16 laptop:px-6 tablet:px-4">
+          <h2 className="text-3xl mt-5 font-bold">Figma Plugin</h2>
+          <h2 className="text-xl my-5">In the process of creating layouts, it was necessary to work with a large amount of data. I received content, but the architects could change it every week. I had to make changes in design layouts (it was important to get the most plausible prototypes for approval and testing). I found a great plugin for Figma - Google Sheets Sync. I made a table and sent it to the architects. So I got my own backend system for layouts.</h2>
+        </div>
+        <img src="../img/project-3/3-5.png" className="w-full" alt="During layout creation, working with a large volume of data was required."/>
+        <div className="pt-16 laptop:px-6 tablet:px-4">
+          <h2 className="text-3xl my-5 font-bold">Prototype</h2>
+        </div>
         <img src="../img/project-3/3-6.png" className="w-full" alt="user interface"/>
-        <img src="../img/project-3/3-7.png" className="w-full" alt="Pages redesigned for presentation using the Vienna design system by Raiffeisen bank. Utilized vibrant colors and well-crafted components"/>
-        <img src="../img/project-3/3-8.png" className="w-full" alt="prototype is below"/>
-        <div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
+        <div className="my-5">
+          <img src="../img/project-3/3-7.png" className="w-full" alt="user interface"/>
+        </div>
+        <div className="mt-5" style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
             <iframe
                 src="https://player.vimeo.com/video/722856848?transparent=0&autoplay=1&loop=1&muted=0&portrait=0&byline=0&h=2697d04fbb&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                 allowFullScreen
