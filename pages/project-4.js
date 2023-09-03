@@ -13,6 +13,7 @@ const { showProjectSix } = data;
 
 const ProjectSix = () => {
   const router = useRouter();
+  const [currentTheme, setCurrentTheme] = useState("light");
   const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const project = data.projects.find((p) => p.id === "4");
@@ -22,8 +23,9 @@ const ProjectSix = () => {
   const reversedProjects = filteredProjects.slice(Math.max(totalProjects - 3, 0)).reverse();
 
   useEffect(() => {
-    setMounted(true);
-  }, []);
+  setMounted(true);
+  setCurrentTheme(theme);
+}, [theme]);
 
   return (
     <div className={`relative ${data.showCursor && "cursor-none"}`}>
@@ -52,7 +54,7 @@ const ProjectSix = () => {
         </div>
           <img
             src={
-              theme === "light" 
+              currentTheme === "light" 
               ? "/img/project-4/4-1w.png" 
               : "/img/project-4/4-1.png"
             }
@@ -65,7 +67,7 @@ const ProjectSix = () => {
         </div>
         <img
           src={
-            theme === "light" 
+            currentTheme === "light" 
             ? "/img/project-4/4-2w.png" 
             : "/img/project-4/4-2.png"
           }
@@ -77,7 +79,7 @@ const ProjectSix = () => {
         </div>
         <img
           src={
-            theme === "light" 
+            currentTheme === "light" 
             ? "/img/project-4/4-3w.png" 
             : "/img/project-4/4-3.png"
           }
@@ -90,7 +92,7 @@ const ProjectSix = () => {
         </div>
         <img
           src={
-            theme === "light" 
+            currentTheme === "light" 
             ? "/img/project-4/4-4w.png" 
             : "/img/project-4/4-4.png"
           }
@@ -99,7 +101,7 @@ const ProjectSix = () => {
         />
         <img
           src={
-            theme === "light" 
+            currentTheme === "light" 
             ? "/img/project-4/4-5w.png" 
             : "/img/project-4/4-5.png"
           }
@@ -112,7 +114,7 @@ const ProjectSix = () => {
         </div>
         <img
           src={
-            theme === "light" 
+            currentTheme === "light" 
             ? "/img/project-4/4-6w.png" 
             : "/img/project-4/4-6.png"
           }
@@ -121,7 +123,7 @@ const ProjectSix = () => {
         />
         <img
           src={
-            theme === "light" 
+            currentTheme === "light" 
             ? "/img/project-4/4-7w.png" 
             : "/img/project-4/4-7.png"
           }
@@ -134,7 +136,7 @@ const ProjectSix = () => {
         </div>
         <img
           src={
-            theme === "light" 
+            currentTheme === "light" 
             ? "/img/project-4/4-8w.png" 
             : "/img/project-4/4-8.png"
           }
@@ -145,7 +147,7 @@ const ProjectSix = () => {
         />
         <img
           src={
-            theme === "light" 
+            currentTheme === "light" 
             ? "/img/project-4/4-9w.png" 
             : "/img/project-4/4-9.png"
           }
@@ -157,7 +159,7 @@ const ProjectSix = () => {
         </div>
         <img
           src={
-            theme === "light" 
+            currentTheme === "light" 
             ? "/img/project-4/4-10w.png" 
             : "/img/project-4/4-10.png"
           }
@@ -166,7 +168,7 @@ const ProjectSix = () => {
         />
         <img
           src={
-            theme === "light" 
+            currentTheme === "light" 
             ? "/img/project-4/4-11w.png" 
             : "/img/project-4/4-11.png"
           }
@@ -194,7 +196,7 @@ const ProjectSix = () => {
         </div>
         <img
           src={
-            theme === "light" 
+            currentTheme === "light" 
             ? "/img/project-4/4-12w.png" 
             : "/img/project-4/4-12.png"
           }

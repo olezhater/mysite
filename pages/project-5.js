@@ -11,8 +11,11 @@ import { useRouter } from "next/router";
 
 const ProjectSix = () => {
   const router = useRouter();
+  const [currentTheme, setCurrentTheme] = useState("light");
   const { theme } = useTheme();
   const [mounted, setMounted] = useState(false);
+
+
 
   const project = data.projects.find((p) => p.id === "5");
 
@@ -22,7 +25,8 @@ const ProjectSix = () => {
 
 useEffect(() => {
   setMounted(true);
-}, []);
+  setCurrentTheme(theme);
+}, [theme]);
 
   return (
     <div className={`relative ${data.showCursor && "cursor-none"}`}>
@@ -43,7 +47,7 @@ useEffect(() => {
         </div>
           <img
             src={
-              theme === "light" 
+              currentTheme === "light" 
               ? "/img/project-5/5-1w.png" 
               : "/img/project-5/5-1.png"
             }
@@ -52,7 +56,7 @@ useEffect(() => {
           />
           <img
             src={
-              theme === "light" 
+              currentTheme === "light" 
               ? "/img/project-5/5-2w.png" 
               : "/img/project-5/5-2.png"
             }
@@ -79,7 +83,7 @@ useEffect(() => {
         </div>
           <img
             src={
-              theme === "light" 
+              currentTheme === "light" 
               ? "/img/project-5/5-3w.png" 
               : "/img/project-5/5-3.png"
             }
