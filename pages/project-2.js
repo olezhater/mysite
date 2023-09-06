@@ -1,18 +1,29 @@
 import Head from "next/head";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ServiceCard from "../components/ServiceCard";
 import WorkCard from "../components/WorkCard";
 import data from "../data/portfolio.json";
 import Cursor from "../components/Cursor";
+import { useTheme } from "next-themes";
+import { useRouter } from "next/router";
 
 const ProjectFive = () => {
+  const router = useRouter();
+  const [currentTheme, setCurrentTheme] = useState("light");
+  const { theme } = useTheme();
+  const [mounted, setMounted] = useState(false);
   const project = data.projects.find((p) => p.id === "2");
 
   const filteredProjects = data.projects.filter((p) => p.url !== project.url && p.id !== "64565912-3f25-4c21-8a6b-bb372a08a2c8");
   const totalProjects = filteredProjects.length;
   const reversedProjects = filteredProjects.slice(Math.max(totalProjects - 3, 0)).reverse();
+
+  useEffect(() => {
+    setMounted(true);
+    setCurrentTheme(theme);
+  }, [theme]);
 
   return (
     <div className={`relative ${data.showCursor && "cursor-none"}`}>
@@ -27,22 +38,50 @@ const ProjectFive = () => {
       <div className="container mx-auto my-10 laptop:px-10">
         <h1 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">{project.title}</h1>
         <p className="my-5">{project.description}</p>
-        <img src="../img/project-2/2-1.png" className="w-full" alt="security questions, feature for banking app"/>
-        <img src="../img/project-2/2-2.png" className="w-full" alt="Design a new feature for the bank application - Security Questions. Control questions serve as an additional method of client identification. In the app settings, users should understand the purpose of security questions, select a question, and provide an answer."/>
-        <img src="../img/project-2/2-3.png" className="w-full" alt="An additional method of identification to protect your funds and regain access to your account."/>
-        <img src="../img/project-2/2-4.png" className="w-full" alt="Streamlining the question selection process. Instead of multiple taps and gestures, it will be simplified to a single tap. Displaying the entire list of questions on the screen at once."/>
-        <img src="../img/project-2/2-5.gif" className="w-full" alt="prototype gif"/>
-        <img src="../img/project-2/2-6.png" className="w-full" alt="Hidden unanswered questions. Displaying saved and unsaved questions on a single screen. This allows the user to quickly proceed to setting up the next question after saving."/>
-        <img src="../img/project-2/2-7.png" className="w-full" alt="Question list"/>
-        <img src="../img/project-2/2-8.png" className="w-full" alt="Adding question deletion functionality."/>
-        <img src="../img/project-2/2-9.gif" className="w-full" alt="prototype gif"/>
-        <img src="../img/project-2/2-10.png" className="w-full" alt="prototype is below"/>
-        <div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
-            <iframe
-                src="https://player.vimeo.com/video/741769309?autoplay=1&loop=1&muted=0&portrait=0&byline=0&h=2697d04fbb&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                allowFullScreen
-                style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
-            />
+        <div className="pt-16 laptop:px-6 tablet:px-4">
+          <h2 className="text-3xl mt-5 font-bold">Introduction</h2>
+          <h2 className="text-xl my-5">I had to develop the design for a new feature in the bank&apos;s application. Security questions are an additional means of client identification. My task was to ensure that in the application settings, users could understand the purpose of security questions and easily configure them.</h2>
+        </div>
+        <div className="pt-16 laptop:px-6 tablet:px-4">
+          <h2 className="text-3xl my-5 font-bold">First prototype</h2>
+        </div>
+          <img
+            src={
+              currentTheme === "light" 
+              ? "/img/project-2/2-1w.png" 
+              : "/img/project-2/2-1.png"
+            }
+            className="w-full"
+            alt="security questions, feature for banking app"
+          />
+        <div className="pt-16 laptop:px-6 tablet:px-4">
+          <h2 className="text-3xl mt-5 font-bold">Research Findings</h2>
+          <h2 className="text-xl my-5">After several user tests, we realized that we needed to first explain to the users why they need security questions. Therefore, we decided to add onboarding to this feature. Additionally, users were unclear about why they couldn&apos;t delete previously added questions, as they might forget the answers to those questions. We have decided to give users this option, and now deletion is available along with SMS code confirmation.</h2>
+        </div>
+          <img
+            src={
+              currentTheme === "light" 
+              ? "/img/project-2/2-2w.png" 
+              : "/img/project-2/2-2.png"
+            }
+            className="w-full"
+            alt="An additional method of identification to protect your funds and regain access to your account"
+          />
+        <div className="pt-16 laptop:px-6 tablet:px-4">
+          <h2 className="text-3xl mt-5 font-bold">How it works</h2>
+          <h2 className="text-xl my-5">An example of a money transfer</h2>
+        </div>
+          <img
+            src={
+              currentTheme === "light" 
+              ? "/img/project-2/2-3w.png" 
+              : "/img/project-2/2-3.png"
+            }
+            className="w-full"
+            alt="Adding question deletion functionality"
+          />
+          <div className="pt-16 laptop:px-6 tablet:px-4">
+          <h2 className="text-xl my-5">This feature has impacted overall user satisfaction positively. With security questions in place, users feel more secure. Furthermore, as we&apos;ve implemented an additional security system, we hope it will help reduce the number of fraudulent transactions.</h2>
         </div>
         <h2 className="mt-40 text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">You May also like</h2>
         <div className="mt-5 grid grid-cols-1 tablet:grid-cols-3 gap-4">

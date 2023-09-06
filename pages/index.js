@@ -99,11 +99,13 @@ export default function Home() {
           <h1 className="text-2xl text-bold">Work.</h1>
 
           <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
-            {[
-              ...data.projects.slice(0, 3),
-              data.projects[4], // Project with id 5
+          {[
               data.projects[3], // Project with id 4
-            ].reverse().map((project) => (
+              data.projects[4], // Project with id 5
+              data.projects[1], // Project with id 2
+              data.projects[2], // Project with id 3
+              data.projects[0], // Project with id 1
+            ].map((project) => (
               <WorkCard
                 key={project.id}
                 img={project.imageSrc}
