@@ -98,11 +98,7 @@ export default function Home() {
 
           <Socials className="mt-2 laptop:mt-5" />
         </div>
-        <div
-          style={{
-            width: "66%",
-          }}
-        >
+        <div className="laptop:w-1/2">
           <div
             className="relative rounded-lg overflow-hidden transition-all ease-out duration-300 h-48 mob:h-auto relative my-5"
             style={{
