@@ -125,11 +125,8 @@ export default function Home() {
               }}
             >
               <h1 className="text-base font-medium text-white">
-                Delivery app redesign
-              </h1>
-              <h2 className="text-sm opacity-50 line-clamp-2 text-white">
                 In progress..
-              </h2>
+              </h1>
             </div>
           </div>
         </div>
