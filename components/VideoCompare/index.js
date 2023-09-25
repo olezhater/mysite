@@ -44,7 +44,7 @@ function VideoCompare() {
         onMouseDown={startDragging}
         onMouseUp={stopDragging}
       >
-        <video loop autoPlay muted poster="../images/before_redesign.jpg" ref={clippedVideoRef} style={{ backgroundColor: "#1D1D1D" }}>
+        <video className="video-before" loop autoPlay muted poster="../images/before_redesign.jpg" ref={clippedVideoRef} style={{ backgroundColor: "#1D1D1D" }}>
           <source src="../images/before_redesign.mp4" />
           <source src="../images/before_redesign.webm" />
         </video>

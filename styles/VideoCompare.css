@@ -76,5 +76,12 @@ height: 10px;
 fill: currentColor;
 }
 
-/* Add any additional styles as needed */
+@media screen and (max-width: 767px) {
+    .video-before,
+    .image-comparison__slider,
+    .image-comparison__thumb {
+      display: none;
+    }
+  }
+  
   
