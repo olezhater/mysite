@@ -33,25 +33,26 @@ function VideoCompare() {
 
   return (
     <div id="video-compare-container" ref={videoContainerRef} onMouseMove={trackLocation} onMouseUp={stopDragging} onMouseLeave={stopDragging}>
-      <video loop autoPlay poster="../public/images/before_redesign.jpg">
-        <source src="../public/images/before_redesign.mp4" />
-        <source src="../public/images/before_redesign.webm" />
-      </video>
+      <iframe
+        src="https://player.vimeo.com/video/867038923?transparent=0&autoplay=1&loop=1&muted=1&portrait=0&byline=0&h=2697d04fbb&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+        allowFullScreen
+        style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
+      />
       <div
         id="video-clipper"
         ref={videoClipperRef}
         onMouseDown={startDragging}
         onMouseUp={stopDragging}
       >
-        <video loop autoPlay poster="../public/images/after_redesign.jpg" ref={clippedVideoRef}>
-          <source src="../public/images/after_redesign.mp4" />
-          <source src="../public/images/after_redesign.webm" />
+        <video loop autoPlay muted poster="../images/before_redesign.jpg" ref={clippedVideoRef} style={{ backgroundColor: "#1D1D1D" }}>
+          <source src="../images/before_redesign.mp4" />
+          <source src="../images/before_redesign.webm" />
         </video>
       </div>
       <div
         className="image-comparison__slider"
         data-image-comparison-slider=""
-        style={{ left: `${sliderValue}%` }}
+        style={{ left: `${sliderValue}vw` }}
         ref={sliderRef}
         onMouseDown={startDragging}
         onMouseUp={stopDragging}

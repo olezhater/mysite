@@ -11,6 +11,7 @@ import Button from "../components/Button";
 import Link from "next/link";
 import Cursor from "../components/Cursor";
 import { useTheme } from "next-themes";
+import VideoCompare from "../components/VideoCompare";
 
 
 // Local Data
@@ -96,9 +97,32 @@ export default function Home() {
             </h1>
           </div>
 
-          <Socials className="mt-2 laptop:mt-5" />
+          <Socials className="my-2 laptop:my-5" />
+          <div className="relative rounded-lg overflow-hidden"
+            style={{
+              position: "relative",
+              overflow: "hidden",
+              background: "#1D1D1D",
+              boxShadow: theme === "dark" ? "0 0 12px rgba(13, 10, 44, 0.6)" : "0 0 12px rgba(33, 24, 81, 0.5)",
+            }}
+          >
+            <VideoCompare />
+            <div className="rounded-lg p-2"
+              style={{
+                position: "absolute",
+                top: "10px", // Расположение сверху
+                left: "10px", // Расположение слева
+                zIndex: "2", // Для надписи поверх видео
+                background: "rgba(0, 0, 0, 0.50)",
+              }}
+            >
+              <h1 className="text-base opacity-50 font-medium text-white">
+                In progress..
+              </h1>
+            </div>
+          </div>
         </div>
-        <div className="laptop:w-1/2">
+        {/*<div className="laptop:w-1/2">
           <div
             className="relative rounded-lg overflow-hidden transition-all ease-out duration-300 h-48 mob:h-auto relative my-5"
             style={{
@@ -129,10 +153,10 @@ export default function Home() {
               </h1>
             </div>
           </div>
-        </div>
+            </div>*/}
 
 
-        <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
+        <div className="mt-12 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
           <h1 className="text-2xl text-bold">Work.</h1>
 
           <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
