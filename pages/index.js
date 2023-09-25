@@ -103,7 +103,7 @@ export default function Home() {
               position: "relative",
               overflow: "hidden",
               background: "#1D1D1D",
-              boxShadow: theme === "dark" ? "0 0 12px rgba(13, 10, 44, 0.6)" : "0 0 12px rgba(33, 24, 81, 0.5)",
+              boxShadow: "rgba(0, 0, 0, 0.4)"
             }}
           >
             <VideoCompare />
