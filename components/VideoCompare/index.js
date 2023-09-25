@@ -33,7 +33,7 @@ function VideoCompare() {
 
   return (
       <div id="video-compare-container" ref={videoContainerRef} onMouseMove={trackLocation} onMouseUp={stopDragging} onMouseLeave={stopDragging}>
-        <video loop autoPlay poster="../images/after_redesign.jpg">
+        <video loop autoPlay muted poster="../images/after_redesign.jpg">
           <source src="../images/after_redesign.mp4" />
           <source src="../images/after_redesign.webm" />
         </video>
