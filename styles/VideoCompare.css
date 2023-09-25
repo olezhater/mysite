@@ -66,8 +66,8 @@ transform: scale(1.2);
 }
 
 .image-comparison__thumb:active {
-    transform: scale(0.8); /* Scale down on active */
-    background-color: rgba(59, 130, 246, 0.5); /* Change background color on active */
+    transform: scale(0.8);
+    background-color: rgba(59, 130, 246, 0.5);
 }
 
 .image-comparison__thumb-icon {

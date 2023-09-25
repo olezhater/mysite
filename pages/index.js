@@ -110,9 +110,9 @@ export default function Home() {
             <div className="rounded-lg p-2"
               style={{
                 position: "absolute",
-                top: "10px", // Расположение сверху
-                left: "10px", // Расположение слева
-                zIndex: "2", // Для надписи поверх видео
+                top: "10px",
+                left: "10px",
+                zIndex: "2",
                 background: "rgba(0, 0, 0, 0.50)",
               }}
             >
@@ -120,41 +120,29 @@ export default function Home() {
                 In progress..
               </h1>
             </div>
-          </div>
-        </div>
-        {/*<div className="laptop:w-1/2">
-          <div
-            className="relative rounded-lg overflow-hidden transition-all ease-out duration-300 h-48 mob:h-auto relative my-5"
-            style={{
-              width: "100%",
-              border: "2px solid rgb(59 130 246 / 0.5)",
-              position: "relative",
-              overflow: "hidden",
-            }}
-          >
-            <div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
-              <iframe
-                src="https://player.vimeo.com/video/867038923?transparent=0&autoplay=1&loop=1&muted=0&portrait=0&byline=0&h=2697d04fbb&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                allowFullScreen
-                style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
-              />
-            </div>
-            <div className="rounded-lg p-2"
+            <div
+              className="hover:scale-110"
               style={{
                 position: "absolute",
-                top: "10px", // Расположение сверху
-                left: "10px", // Расположение слева
-                zIndex: "2", // Для надписи поверх видео
+                bottom: "20px",
+                right: "20px",
+                zIndex: "2",
                 background: "rgba(0, 0, 0, 0.50)",
               }}
+              onClick={() =>
+                window.open(
+                  "https://player.vimeo.com/video/867038923?transparent=0&autoplay=1&loop=1&muted=0&portrait=0&byline=0&h=2697d04fbb&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                )
+              }
             >
-              <h1 className="text-base font-medium text-white">
-                In progress..
-              </h1>
+              <img
+                className="h-6"
+                src="../images/fullscreen.svg"
+                alt="Fullscreen Button"
+              />
             </div>
           </div>
-            </div>*/}
-
+        </div>
 
         <div className="mt-12 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
           <h1 className="text-2xl text-bold">Work.</h1>
