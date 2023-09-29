@@ -1,9 +1,10 @@
 import Head from "next/head";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import Header from "../components/Header";
 import ServiceCard from "../components/ServiceCard";
 import Socials from "../components/Socials";
 import WorkCard from "../components/WorkCard";
+import MyProjects from "../components/MyProjects";
 import { useIsomorphicLayoutEffect } from "../utils";
 import { stagger } from "../animations";
 import Footer from "../components/Footer";
@@ -35,6 +36,24 @@ export default function Home() {
     });
   };
 
+  //Show projects
+  const [showWork, setShowWork] = useState(true);
+  const [showMyProjects, setShowMyProjects] = useState(false);
+  const [showDot, setShowDot] = useState(true);
+
+  const handleWorkClick = () => {
+    setShowWork(true);
+    setShowMyProjects(false);
+    setShowDot(true);
+  };
+
+  const handleMyProjectsClick = () => {
+    setShowWork(false);
+    setShowMyProjects(true);
+    setShowDot(false);
+  };
+
+  //..
   const handleAboutScroll = () => {
     window.scrollTo({
       top: aboutRef.current.offsetTop -20,
@@ -145,10 +164,34 @@ export default function Home() {
         </div>
 
         <div className="mt-12 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
-          <h1 className="text-2xl text-bold">Work.</h1>
+          <div className="flex items-center">
+            <h1
+              className={`text-2xl text-bold ${showWork ? "opacity-100" : "opacity-60"}`}
+              onClick={handleWorkClick}
+            >
+              Work
+            </h1>
+            <h1
+              className={`text-2xl text-bold ml-12 ${showMyProjects ? "opacity-100" : "opacity-60"}`}
+              onClick={handleMyProjectsClick}
+            >
+              My Projects
+              <span
+                className={`ml-2 ${showDot ? "opacity-100" : "opacity-0"}`}
+                style={{
+                  width: "8px",
+                  height: "8px",
+                  backgroundColor: "red",
+                  borderRadius: "50%",
+                  display: "inline-block",
+                  verticalAlign: "top",
+                }}
+              ></span>
+            </h1>
+          </div>
 
-          <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
-          {[
+          <div className={`mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4 ${showWork ? "" : "hidden"}`}> {/*Это блок 1*/}
+            {[
               data.projects[3], // Project with id 4
               data.projects[4], // Project with id 5
               data.projects[1], // Project with id 2
@@ -168,10 +211,37 @@ export default function Home() {
               />
             ))}
           </div>
-          <div className="mx-auto mt-20 text-center">
+          
+          <div className={`mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4 ${showMyProjects ? "" : "hidden"}`}> {/*Это блок 2*/}
+          {[
+            data.projects[5], // Project with id 6
+            data.projects[6], // Project with id 7
+          ].map((project) => (
+            <div key={project.id} className="relative">
+              <MyProjects
+                img={project.imageSrc}
+                name={project.title}
+                description={project.description}
+                isHomepage={true}
+                onClick={() => window.open(project.url, '_blank')}
+                alt={project.alt}
+                className={project.id === "4" ? 'laptop:col-span-2 tablet:col-span-2' : ''}
+                enableParallax={true}
+              />
+              {project.id === "6" && ( // Проверяем, является ли текущий проект с id 6
+                <div className="absolute top-2 right-2 bg-red-500 text-white text-xs rounded-full px-2 py-1">
+                  NEW
+                </div>
+              )}
+            </div>
+          ))}
+          </div>
+
+          <div className={`mx-auto mt-20 text-center ${showWork ? "" : "hidden"}`}> {/*Это блок с кнопкой*/}
             <Button type="primary" onClick={() => window.open("https://www.behance.net/teretenko")}>View earlier projects on Behance</Button>
           </div>
-          </div>
+        </div>
+
 {/* 
 <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
           {data.projects.slice(0).reverse().map((project) => (
