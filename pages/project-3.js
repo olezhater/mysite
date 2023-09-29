@@ -61,7 +61,11 @@ const ProjectSix = () => {
         </div>
         <h2 className="mt-40 text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">You May also like</h2>
         <div className="mt-5 grid grid-cols-1 tablet:grid-cols-3 gap-4">
-          {reversedProjects.map((p) => (
+            {[
+              data.projects[0], // Project with id 1
+              data.projects[3], // Project with id 4
+              data.projects[4], // Project with id 5
+            ].map((p) => (
             <WorkCard
                 key={p.id}
                 img={p.imageSrc}
