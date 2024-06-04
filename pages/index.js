@@ -117,26 +117,29 @@ export default function Home() {
           </div>
 
           <Socials className="my-2 laptop:my-5" />
-          <div className="relative rounded-lg overflow-hidden"
+          <div className="relative rounded-lg overflow-hidden hidden laptop:block"
             style={{
               position: "relative",
               overflow: "hidden",
               background: "#1D1D1D",
-              boxShadow: "rgba(0, 0, 0, 0.6)"
+              border: "2px solid rgba(255, 255, 255, 0.1)",
             }}
           >
             <VideoCompare />
-            <div className="rounded-lg p-2"
+            <div
+              className="rounded-lg p-2"
               style={{
                 position: "absolute",
-                top: "10px",
+                bottom: "10px",
                 left: "10px",
                 zIndex: "2",
-                background: "rgba(0, 0, 0, 0.50)",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
               }}
             >
               <h1 className="text-base opacity-50 font-medium text-white">
-                In progress..
+                #before&after
               </h1>
             </div>
             <div
