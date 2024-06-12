@@ -217,6 +217,7 @@ export default function Home() {
           
           <div className={`mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4 ${showMyProjects ? "" : "hidden"}`}> {/*Это блок 2*/}
           {[
+            data.projects[7], // Project with id 8
             data.projects[5], // Project with id 6
             data.projects[6], // Project with id 7
           ].map((project) => (
@@ -231,7 +232,7 @@ export default function Home() {
                 className={project.id === "4" ? 'laptop:col-span-2 tablet:col-span-2' : ''}
                 enableParallax={true}
               />
-              {project.id === "6" && ( // Проверяем, является ли текущий проект с id 6
+              {project.id === "8" && ( // Проверяем, является ли текущий проект с id 6
                 <div className="absolute top-2 right-2 bg-red-500 text-white text-xs rounded-full px-2 py-1">
                   NEW
                 </div>
