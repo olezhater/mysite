@@ -32,7 +32,7 @@ function VideoCompare() {
   }
 
   return (
-      <div id="video-compare-container" ref={videoContainerRef} onMouseMove={trackLocation} onMouseUp={stopDragging} onMouseLeave={stopDragging}>
+      <div id="video-compare-container" ref={videoContainerRef} onMouseMove={trackLocation} onMouseUp={stopDragging} onMouseLeave={stopDragging} style={{ backgroundColor: "#1B1B1B" }}>
         <video loop autoPlay muted poster="../images/after_redesign.jpg">
           <source src="../images/after_redesign.mp4" />
           <source src="../images/after_redesign.webm" />
@@ -43,7 +43,7 @@ function VideoCompare() {
         onMouseDown={startDragging}
         onMouseUp={stopDragging}
       >
-        <video className="video-before" loop autoPlay muted poster="../images/before_redesign.jpg" ref={clippedVideoRef} style={{ backgroundColor: "#1D1D1D" }}>
+        <video className="video-before" loop autoPlay muted poster="../images/before_redesign.jpg" ref={clippedVideoRef} style={{ backgroundColor: "#1B1B1B" }}>
           <source src="../images/before_redesign.mp4" />
           <source src="../images/before_redesign.webm" />
         </video>

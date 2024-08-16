@@ -134,15 +134,20 @@ export default function Home() {
                 left: "10px",
                 zIndex: "2",
                 display: "flex",
-                alignItems: "center",
+                alignItems: "start",
                 justifyContent: "center",
+                flexDirection: "column",
               }}
             >
               <h1 className="text-base opacity-50 font-medium text-white">
                 #before&after
               </h1>
+              <p className="text-base text-white">
+                Redesign Product Detail Screen for Pizza Delivery App
+              </p>
             </div>
-            <div
+            {/* Fullscreen button
+              <div
               className="hover:scale-110"
               style={{
                 position: "absolute",
@@ -162,8 +167,64 @@ export default function Home() {
                 src="../images/fullscreen.svg"
                 alt="Fullscreen Button"
               />
+            </div> */}
+            <div
+              style={{
+                position: "absolute",
+                bottom: "10px",
+                right: "20px",
+                zIndex: "2",
+              }}
+            >
+            <div className="flex items-center gap-2 mb-1em ">
+              <a className="transition-all duration-300 ease-out hover:scale-105" href="https://apps.apple.com/gb/app/dodo-pizza-pizza-delivery/id894649641" target="_blank" rel="noopener noreferrer">
+                <img src="/img/project-4/download_appstore.png" alt="Download on the App Store" style={{ width: '120px', marginBottom: '1em' }} />
+              </a>
+              <a className="transition-all duration-300 ease-out hover:scale-105" href="https://play.google.com/store/apps/details?id=ru.dodopizza.app&hl=en" target="_blank" rel="noopener noreferrer">
+                <img src="/img/project-4/download_googleplay.png" alt="Get it on Google Play" style={{ width: '120px', marginBottom: '1em' }} />
+              </a>
+            </div>
             </div>
           </div>
+
+          <div className="relative rounded-lg overflow-hidden block laptop:hidden"
+            style={{
+              position: "relative",
+              overflow: "hidden",
+              background: "#1D1D1D",
+              border: "2px solid rgba(255, 255, 255, 0.1)",
+            }}
+          >
+            {/* <video loop autoPlay muted controls poster="../images/before_and_after.jpg" style={{ backgroundColor: "#1B1B1B" }}>
+              <source src="../images/before_and_after.mp4" />
+              <source src="../images/before_and_after.webm" />
+            </video> */}
+            <div>
+              <img src="../images/before_and_after.gif" alt="Description of the gif" />
+            </div>
+            <div
+              className="rounded-lg p-2"
+              style={{
+                position: "absolute",
+                bottom: "10px",
+                left: "10px",
+                zIndex: "2",
+                display: "flex",
+                alignItems: "start",
+                justifyContent: "center",
+                flexDirection: "column",
+              }}
+            >
+              <h1 className="text-base opacity-50 font-medium text-white">
+                #before&after
+              </h1>
+              <p className="text-base text-white">
+                Redesign Product Detail Screen for Pizza Delivery App
+              </p>
+            </div>
+          </div>
+
+
         </div>
 
         <div className="mt-12 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
