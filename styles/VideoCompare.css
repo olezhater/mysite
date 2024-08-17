@@ -7,6 +7,7 @@ position: relative;
 width: 100%;
 padding-top: 42.3%;
 overflow-x: hidden;
+margin-bottom: -2%;
 }
 
 #video-compare-container > video {
@@ -37,7 +38,9 @@ top: 50%;
 transform: translate(-50%, -50%);
 width: 0.1em;
 height: 100%;
-background-color: rgb(59 130 246);
+background-image: url('/images/card-bg.jpg');
+background-position: center; 
+background-size: cover;
 z-index: 3;
 cursor: ew-resize;
 }
@@ -52,7 +55,9 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-background: linear-gradient(120deg, #07D2FB, #4B33A1, #0D0A2C);
+background-image: url('/images/card-bg.jpg');
+background-position: center; 
+background-size: cover;
 color: #fff;
 border-radius: 50%;
 box-shadow: 0 0 22px 0 rgba(0, 0, 0, 0.5);
@@ -62,7 +67,7 @@ transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .image-comparison__thumb:hover {
-transform: scale(1.2);
+transform: scale(0.9);
 }
 
 .image-comparison__thumb:active {

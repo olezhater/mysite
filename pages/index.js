@@ -117,14 +117,25 @@ export default function Home() {
           </div>
 
           <Socials className="my-2 laptop:my-5" />
+
+          {/* Before and after for desktop */}
           <div className="relative rounded-lg overflow-hidden hidden laptop:block"
             style={{
               position: "relative",
-              overflow: "hidden",
-              background: "#1D1D1D",
-              border: "2px solid rgba(255, 255, 255, 0.1)",
+              padding: "2px", // Это нужно для создания пространства под градиентный бордер
+              borderRadius: "16px", // Устанавливаем радиус бордера здесь, чтобы это соответствовало контейнеру
+              backgroundImage: `url('../images/card-bg.jpg')`, // Градиент для бордера
+              backgroundPosition: "center",
+              backgroundSize: "cover",
             }}
           >
+            <div className="relative rounded-lg overflow-hidden"
+              style={{
+                background: "#1D1D1D", // Внутренний фон
+                borderRadius: "14px", // Радиус немного меньше, чтобы градиент был виден как бордер
+              }}
+            >
+            {/* Ваш контент здесь */}
             <VideoCompare />
             <div
               className="rounded-lg p-2"
@@ -146,6 +157,7 @@ export default function Home() {
                 Redesign Product Detail Screen for Pizza Delivery App
               </p>
             </div>
+          </div>
             {/* Fullscreen button
               <div
               className="hover:scale-110"
@@ -187,19 +199,26 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="relative rounded-lg overflow-hidden block laptop:hidden"
+          {/* Before and after for mobile */}
+          <div enableParallax={true} className="relative rounded-lg block laptop:hidden"
             style={{
               position: "relative",
-              overflow: "hidden",
-              background: "#1D1D1D",
-              border: "2px solid rgba(255, 255, 255, 0.1)",
+              padding: "2px", // Это нужно для создания пространства под градиентный бордер
+              borderRadius: "16px", // Устанавливаем радиус бордера здесь, чтобы это соответствовало контейнеру
+              backgroundImage: `url('../images/card-bg.jpg')`, // Градиент для бордера
+              backgroundPosition: "center",
+              backgroundSize: "cover",
             }}
+        >
+          <div className="relative rounded-lg overflow-hidden"
+              style={{
+                background: "#1D1D1D", // Внутренний фон
+                borderRadius: "14px", // Радиус немного меньше, чтобы градиент был виден как бордер
+                padding: "16px", // Внутренний контент с padding
+              }}
           >
-            {/* <video loop autoPlay muted controls poster="../images/before_and_after.jpg" style={{ backgroundColor: "#1B1B1B" }}>
-              <source src="../images/before_and_after.mp4" />
-              <source src="../images/before_and_after.webm" />
-            </video> */}
-            <div>
+            {/* Ваш контент здесь */}
+            <div className="pb-4">
               <img src="../images/before_and_after.gif" alt="Description of the gif" />
             </div>
             <div
@@ -222,6 +241,7 @@ export default function Home() {
                 Redesign Product Detail Screen for Pizza Delivery App
               </p>
             </div>
+          </div>
           </div>
 
 
