@@ -124,14 +124,14 @@ export default function Home() {
               position: "relative",
               padding: "2px", // Это нужно для создания пространства под градиентный бордер
               borderRadius: "16px", // Устанавливаем радиус бордера здесь, чтобы это соответствовало контейнеру
-              backgroundImage: `url('../images/card-bg.jpg')`, // Градиент для бордера
+              backgroundImage: `url('../images/card-bg.jpg')`,
               backgroundPosition: "center",
               backgroundSize: "cover",
             }}
           >
             <div className="relative rounded-lg overflow-hidden"
               style={{
-                background: "#1D1D1D", // Внутренний фон
+                background: "#1B1B1B", // Внутренний фон
                 borderRadius: "14px", // Радиус немного меньше, чтобы градиент был виден как бордер
               }}
             >
@@ -212,7 +212,7 @@ export default function Home() {
         >
           <div className="relative rounded-lg overflow-hidden"
               style={{
-                background: "#1D1D1D", // Внутренний фон
+                background: "#1B1B1B", // Внутренний фон
                 borderRadius: "14px", // Радиус немного меньше, чтобы градиент был виден как бордер
                 padding: "16px", // Внутренний контент с padding
               }}
