@@ -22,7 +22,7 @@ const WorkCard = ({ img, name, description, onClick, isHomepage, alt, className,
 
   return (
     <div
-      className={`relative rounded-lg p-2 laptop:p-4 first:ml-0 link ${className}`}
+      className={`relative rounded-lg p-2 laptop:p-0 first:ml-0 link ${className}`}
       onClick={onClick}
     >
       <div

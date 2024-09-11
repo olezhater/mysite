@@ -75,3 +75,18 @@ body {
   background: inherit;
   border-radius: inherit;
 }
+
+.underline-tab {
+  position: relative;
+}
+
+.underline-tab::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -12px;
+  height: 2px;
+  background-color: rgb(75, 51, 161);
+  border-radius: 1px;
+}

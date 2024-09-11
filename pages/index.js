@@ -247,32 +247,33 @@ export default function Home() {
 
         </div>
 
+       {/* Tabs */}
         <div className="mt-12 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
           <div className="flex items-center">
             <h1
-              className={`text-2xl text-bold ${showWork ? "opacity-100" : "opacity-60"}`}
+              className={`text-2xl font-bold cursor-pointer ${showWork ? "opacity-100 underline-tab" : "opacity-60"}`}
               onClick={handleWorkClick}
             >
               Work
             </h1>
             <h1
-              className={`text-2xl text-bold ml-12 ${showMyProjects ? "opacity-100" : "opacity-60"}`}
+              className={`text-2xl font-bold cursor-pointer ml-12 ${showMyProjects ? "opacity-100 underline-tab" : "opacity-60"}`}
               onClick={handleMyProjectsClick}
             >
               My Projects
               <span
-                className={`ml-2 ${showDot ? "opacity-100" : "opacity-0"}`}
+                className="ml-2"
                 style={{
                   width: "8px",
                   height: "8px",
                   backgroundColor: "red",
                   borderRadius: "50%",
-                  display: "inline-block",
+                  display: showDot ? "inline-block" : "none",  // Условный рендеринг
                   verticalAlign: "top",
                 }}
               ></span>
             </h1>
-          </div>
+          </div>            
 
           <div className={`mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4 ${showWork ? "" : "hidden"}`}> {/*Это блок 1*/}
             {[
@@ -365,7 +366,7 @@ export default function Home() {
             </Link>
           </div>
         )}
-        <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
+        <div className="mt-10 laptop:mt-40" ref={aboutRef}>
           <h1 className="tablet:m-10 text-2xl text-bold">About.</h1>
           <div className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-full laptop:w-3/5" style={{ whiteSpace: 'pre-line' }}>
             {data.aboutpara}
