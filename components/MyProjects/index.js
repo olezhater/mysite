@@ -22,7 +22,7 @@ const MyProjects = ({ img, name, description, onClick, isHomepage, alt, classNam
 
   return (
     <div
-      className={`relative rounded-lg p-2 laptop:p-4 first:ml-0 link ${className}`}
+      className={`relative rounded-lg mb-8 first:ml-0 link ${className}`}
       onClick={onClick}
     >
       <div

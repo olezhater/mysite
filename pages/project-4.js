@@ -48,7 +48,7 @@ const ProjectSix = () => {
             <img src="/img/project-4/download_googleplay.png" alt="Get it on Google Play" style={{ width: '120px', marginBottom: '1em' }} />
           </a>
         </div>
-        <div className="pt-16 laptop:px-6 tablet:px-4">
+        <div className="pt-16 laptop:px-6 tablet:px-4 mb-8">
           <h2 className="text-3xl mt-5 font-bold">Introduction</h2>
           <h2 className="text-xl my-5">In this presentation, I will give you an overview of what I&apos;ve been working on at Magnit recently. Specifically, the exciting new major update of the Magnit app, which now includes the features of the Magnit Delivery app. But first, let&apos;s take a look at some key figures that define Magnit as a company.</h2>
         </div>
@@ -61,7 +61,7 @@ const ProjectSix = () => {
             className="w-full"
             alt="One of the top food retail chains"
           />
-        <div className="pt-16 laptop:px-6 tablet:px-4">
+        <div className="pt-16 laptop:px-6 tablet:px-4 mb-8">
           <h2 className="text-3xl mt-5 font-bold">The Challenge</h2>
           <h2 className="text-xl my-5">Magnit Company faces the challenge of managing two applications: Magnit Sales and Discounts, and Magnit Delivery. The decision has been made to merge these two applications and integrate the delivery feature into the primary Magnit app.</h2>
         </div>
@@ -86,7 +86,7 @@ const ProjectSix = () => {
           className="w-full"
           alt="My contributions"
         />
-        <div className="pt-16 laptop:px-6 tablet:px-4">
+        <div className="pt-16 laptop:px-6 tablet:px-4 mb-8">
           <h2 className="text-3xl mt-5 font-bold">Discover/Empathize</h2>
           <h2 className="text-xl my-5">Before delving into the task, we collaborated with the business analyst to gather user feedback from App Store and Google Play reviews. Additionally, our UX researcher assisted in collecting user feedback during recent interviews. Through these efforts, we pinpointed several issues concerning the shopping cart and checkout process.</h2>
         </div>
@@ -96,7 +96,7 @@ const ProjectSix = () => {
             ? "/img/project-4/4-4w.png" 
             : "/img/project-4/4-4.png"
           }
-          className="w-full"
+          className="w-full mb-8"
           alt="Discover and Empathize"
         />
         <img
@@ -108,7 +108,7 @@ const ProjectSix = () => {
           className="w-full"
           alt="Discover and Empathize"
         />
-        <div className="pt-16 laptop:px-6 tablet:px-4">
+        <div className="pt-16 laptop:px-6 tablet:px-4 mb-8">
           <h2 className="text-3xl mt-5 font-bold">Ideate and Prototype</h2>
           <h2 className="text-xl my-5">Together with the product manager, we decided to implement the following interface changes in the application</h2>
         </div>
@@ -118,7 +118,7 @@ const ProjectSix = () => {
             ? "/img/project-4/4-6w.png" 
             : "/img/project-4/4-6.png"
           }
-          className="w-full"
+          className="w-full mb-8"
           alt="Ideate and Prototype"
         />
         <img
@@ -130,7 +130,7 @@ const ProjectSix = () => {
           className="w-full"
           alt="Ideate and Prototype"
         />
-        <div className="pt-16 laptop:px-6 tablet:px-4">
+        <div className="pt-16 laptop:px-6 tablet:px-4 mb-8">
           <h2 className="text-3xl mt-5 font-bold">Testing</h2>
           <h2 className="text-xl my-5">With the UX researcher, we conducted several user tests. Additionally, with the collaboration of the development team we launched A/B tests. Here are the insights we gained after several rounds of testing.</h2>
         </div>
@@ -140,7 +140,7 @@ const ProjectSix = () => {
             ? "/img/project-4/4-8w.png" 
             : "/img/project-4/4-8.png"
           }
-          className="w-full"
+          className="w-full mb-8"
           width="100%" 
           height="100%"
           alt="Testing"
@@ -154,7 +154,7 @@ const ProjectSix = () => {
           className="w-full"
           alt="UI components"
         />
-        <div className="pt-16 laptop:px-6 tablet:px-4">
+        <div className="pt-16 laptop:px-6 tablet:px-4 mb-8">
           <h2 className="text-3xl my-5 font-bold">Prototype - Round 2 | and Results</h2>
         </div>
         <img
@@ -163,7 +163,7 @@ const ProjectSix = () => {
             ? "/img/project-4/4-10w.png" 
             : "/img/project-4/4-10.png"
           }
-          className="w-full"
+          className="w-full mb-8"
           alt="Prototype and Results"
         />
         <img
@@ -178,7 +178,7 @@ const ProjectSix = () => {
         <div className="pt-16 laptop:px-6 tablet:px-4">
           <h2 className="text-xl my-5">By making these positive changes, we have effectively addressed user pain points, improved the user journey, and achieved significant results in terms of user satisfaction and order success rates. I thank the team for the work done!</h2>
         </div>
-        <div className="pt-16 laptop:px-6 tablet:px-4">
+        <div className="pt-16 laptop:px-6 tablet:px-4 mb-8">
           <h2 className="text-3xl mt-5 font-bold">Outcomes</h2>
           <h2 className="text-xl my-5">By consolidating all major services in one app, we significantly enhance the shopping experience. Now, making an online order doesn&apos;t require downloading a separate app. We anticipate that the online ordering feature will be sought after by 20% of the main app users, which will significantly impact the company&apos;s profitability.</h2>
           <h2 className="text-xl my-5">Below are several screens in a prototype</h2>
@@ -190,7 +190,7 @@ const ProjectSix = () => {
                 style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
             />
         </div>
-        <div className="pt-16 laptop:px-6 tablet:px-4">
+        <div className="pt-16 laptop:px-6 tablet:px-4 mb-8">
           <h2 className="text-3xl mt-5 font-bold">Bonus: Design Tokens</h2>
           <h2 className="text-xl my-5">In the new update of the Magnit app, our design team utilized a new design system built with design tokens. We rebuilt all components for Magnit Express, Hyper, Cosmetics, and Pharmacy delivery services. With the introduction of variables in Figma, switching between these services in the design creation process has become even easier.</h2>
         </div>

@@ -38,7 +38,7 @@ useEffect(() => {
       </Head>
 
       <Header isBlog/>
-      <div className="container mx-auto my-10 laptop:px-10">
+      <div className="container mx-auto my-10 laptop:px-10 mb-8">
         <h1 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">{project.title}</h1>
         <p className="my-5">{project.description}</p>
         <div className="pt-16 laptop:px-6 tablet:px-4">
@@ -51,7 +51,7 @@ useEffect(() => {
               ? "/img/project-5/5-1w.png" 
               : "/img/project-5/5-1.png"
             }
-            className="w-full"
+            className="w-full mb-8"
             alt="What We Implemented and the Problems Solved"
           />
           <img
@@ -63,7 +63,7 @@ useEffect(() => {
             className="w-full"
             alt="UI delivery app. Search field at the bottom"
           />
-        <div className="pt-16 laptop:px-6 tablet:px-4">
+        <div className="pt-16 laptop:px-6 tablet:px-4 mb-8">
           <h2 className="text-3xl mt-5 font-bold">Research Scenarios and Goals</h2>
           <h2 className="text-2xl mt-5" style={{ color:'#D92F78' }}>Test the Navigation</h2>
           <h2 className="text-xl my-5">To determine if users can find the necessary menu item without a bottom tab bar, we asked them to locate the order history section from the new main screen.</h2>
@@ -78,7 +78,7 @@ useEffect(() => {
                 style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
             />
         </div>
-        <div className="pt-16 laptop:px-6 tablet:px-4">
+        <div className="pt-16 laptop:px-6 tablet:px-4 mb-8">
           <h2 className="text-3xl my-5 font-bold">Research Findings</h2>
         </div>
           <img

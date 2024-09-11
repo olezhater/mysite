@@ -42,7 +42,7 @@ const ProjectFive = () => {
           <h2 className="text-3xl mt-5 font-bold">Introduction</h2>
           <h2 className="text-xl my-5">I had to develop the design for a new feature in the bank&apos;s application. Security questions are an additional means of client identification. My task was to ensure that in the application settings, users could understand the purpose of security questions and easily configure them.</h2>
         </div>
-        <div className="pt-16 laptop:px-6 tablet:px-4">
+        <div className="pt-16 laptop:px-6 tablet:px-4 mb-8">
           <h2 className="text-3xl my-5 font-bold">First prototype</h2>
         </div>
           <img
@@ -54,7 +54,7 @@ const ProjectFive = () => {
             className="w-full"
             alt="security questions, feature for banking app"
           />
-        <div className="pt-16 laptop:px-6 tablet:px-4">
+        <div className="pt-16 laptop:px-6 tablet:px-4 mb-8">
           <h2 className="text-3xl mt-5 font-bold">Research Findings</h2>
           <h2 className="text-xl my-5">After several user tests, we realized that we needed to first explain to the users why they need security questions. Therefore, we decided to add onboarding to this feature. Additionally, users were unclear about why they couldn&apos;t delete previously added questions, as they might forget the answers to those questions. We have decided to give users this option, and now deletion is available along with SMS code confirmation.</h2>
         </div>
@@ -67,7 +67,7 @@ const ProjectFive = () => {
             className="w-full"
             alt="An additional method of identification to protect your funds and regain access to your account"
           />
-        <div className="pt-16 laptop:px-6 tablet:px-4">
+        <div className="pt-16 laptop:px-6 tablet:px-4 mb-8">
           <h2 className="text-3xl mt-5 font-bold">How it works</h2>
           <h2 className="text-xl my-5">An example of a money transfer</h2>
         </div>
