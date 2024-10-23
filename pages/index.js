@@ -277,6 +277,7 @@ export default function Home() {
 
           <div className={`mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4 ${showWork ? "" : "hidden"}`}> {/*Это блок 1*/}
             {[
+              data.projects[9], // Project with id 10
               data.projects[3], // Project with id 4
               data.projects[4], // Project with id 5
               data.projects[1], // Project with id 2
@@ -291,7 +292,7 @@ export default function Home() {
                 isHomepage={true}
                 onClick={() => window.location.href = project.url}
                 alt={project.alt}
-                className={project.id === "4" ? 'laptop:col-span-2 tablet:col-span-2' : ''}
+                //className={project.id === "4" ? 'laptop:col-span-2 tablet:col-span-2' : ''}
                 enableParallax={true}
               />
             ))}
@@ -300,7 +301,7 @@ export default function Home() {
           <div className={`mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4 ${showMyProjects ? "" : "hidden"}`}> {/*Это блок 2*/}
           {[
             data.projects[8], // Project with id 9
-            data.projects[7], // Project with id 8
+            //data.projects[7], // Project with id 8
             data.projects[5], // Project with id 6
             data.projects[6], // Project with id 7
           ].map((project) => (

@@ -88,7 +88,7 @@ const ProjectFive = () => {
             {[
               data.projects[2], // Project with id 3
               data.projects[0], // Project with id 1
-              data.projects[3], // Project with id 4
+              data.projects[9], // Project with id 10
             ].map((p) => (
             <WorkCard
               key={p.id}

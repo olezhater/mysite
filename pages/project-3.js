@@ -63,8 +63,8 @@ const ProjectSix = () => {
         <div className="mt-5 grid grid-cols-1 tablet:grid-cols-3 gap-4">
             {[
               data.projects[0], // Project with id 1
+              data.projects[9], // Project with id 10
               data.projects[3], // Project with id 4
-              data.projects[4], // Project with id 5
             ].map((p) => (
             <WorkCard
                 key={p.id}
