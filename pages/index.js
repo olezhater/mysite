@@ -78,25 +78,39 @@ export default function Home() {
       {data.showCursor && <Cursor />}
       <Head>
         <title>{data.name} - {data.headerTaglineThree}</title>
-        <meta name="description" content="Senior Product Designer and Expert Mobile UX/UI Designer specializing in fintech, edtech, and e-commerce. With a strong focus on enhancing user experience for mobile devices, Oleg brings extensive experience in designing intuitive interfaces for millions of users. Connect with Oleg for innovative design solutions and collaborations." />
+        <meta name="description" content="Senior Product Designer and Expert Mobile UX/UI Designer specializing in fintech and e-commerce. With a strong focus on enhancing user experience for mobile devices, Oleg brings extensive experience in designing intuitive interfaces for millions of users. Connect with Oleg for innovative design solutions and collaborations." />
+        <meta name="keywords" content="UX/UI Designer, Product Designer, Mobile Design, Fintech Design, E-commerce Design, User Experience" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={`${data.name} - ${data.headerTaglineThree}`} />
+        <meta property="og:description" content="Senior Product Designer and Expert Mobile UX/UI Designer specializing in fintech and e-commerce." />
+        <meta property="og:image" content="/img/og.png" />
+        <meta property="og:url" content="https://teretenko.com" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={`${data.name} - ${data.headerTaglineThree}`} />
+        <meta name="twitter:description" content="Senior Product Designer and Expert Mobile UX/UI Designer specializing in fintech and e-commerce." />
+        <meta name="twitter:image" content="/img/og.png" />
       </Head>
 
       <div className="gradient-circle"></div>
       <div className="gradient-circle-bottom"></div>
-      <Header
-        handleWorkScroll={handleWorkScroll}
-        handleAboutScroll={handleAboutScroll}
-      />
+      <header>
+        <Header
+          handleWorkScroll={handleWorkScroll}
+          handleAboutScroll={handleAboutScroll}
+        />
+      </header>
       <div className="container mx-auto mb-10">
+      <main>
         <div className="laptop:mt-20 mt-10">
           <div className="mt-5">
           <div className="flex items-center">
-            <h1
+            <p
               ref={textOne}
               className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 font-extrabold"
             >
               {data.headerTaglineOne}
-            </h1>
+            </p>
             <div className="w-[1em] h-[1em] text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl" style={{ transform: "rotate(-15deg)" }}>
               <DotLottieReact
                 src="/img/lottie.json"
@@ -106,25 +120,25 @@ export default function Home() {
               />
             </div>
           </div>
-            <h1
+            <h2
               ref={textTwo}
               className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 font-extrabold w-full laptop:w-4/5"
             >
               {data.headerTaglineTwo}
-            </h1>
+            </h2>
             <h1
               ref={textThree}
               className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 font-extrabold w-full laptop:w-4/5"
             >
               {data.headerTaglineThree}
             </h1>
-            <h1
+            <p
               ref={textFour}
               className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 font-extrabold w-full laptop:w-4/5"
               style={{ lineHeight: '1.25' }}
             >
               {data.headerTaglineFour}
-            </h1>
+            </p>
           </div>
 
           <Socials className="my-2 laptop:my-5" />
@@ -161,9 +175,9 @@ export default function Home() {
                 flexDirection: "column",
               }}
             >
-              <h1 className="text-base opacity-50 font-medium text-white">
+              <p className="text-base opacity-50 font-medium text-white">
                 #before&after
-              </h1>
+              </p>
               <p className="text-base text-white">
                 Redesign Product Detail Screen for Pizza Delivery App
               </p>
@@ -230,7 +244,7 @@ export default function Home() {
           >
             {/* Ваш контент здесь */}
             <div className="pb-4">
-              <img src="../images/before_and_after.gif" alt="Description of the gif" />
+              <img src="../images/before_and_after.gif" alt="Redesign of Pizza Delivery App Screen" />
             </div>
             <div
               className="rounded-lg p-2"
@@ -245,9 +259,9 @@ export default function Home() {
                 flexDirection: "column",
               }}
             >
-              <h1 className="text-base opacity-50 font-medium text-white">
+              <p className="text-base opacity-50 font-medium text-white">
                 #before&after
-              </h1>
+              </p>
               <p className="text-base text-white">
                 Redesign Product Detail Screen for Pizza Delivery App
               </p>
@@ -261,13 +275,13 @@ export default function Home() {
        {/* Tabs */}
         <div className="mt-12 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
           <div className="flex items-center">
-            <h1
+            <p
               className={`text-2xl font-bold cursor-pointer ${showWork ? "opacity-100 underline-tab" : "opacity-60"}`}
               onClick={handleWorkClick}
             >
               Work
-            </h1>
-            <h1
+            </p>
+            <p
               className={`text-2xl font-bold cursor-pointer ml-12 ${showMyProjects ? "opacity-100 underline-tab" : "opacity-60"}`}
               onClick={handleMyProjectsClick}
             >
@@ -283,7 +297,7 @@ export default function Home() {
                   verticalAlign: "top",
                 }}
               ></span>
-            </h1>
+            </p>
           </div>            
 
           <div className={`mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4 ${showWork ? "" : "hidden"}`}> {/*Это блок 1*/}
@@ -379,12 +393,15 @@ export default function Home() {
           </div>
         )}
         <div className="mt-10 laptop:mt-40" ref={aboutRef}>
-          <h1 className="tablet:m-10 text-2xl text-bold">About.</h1>
+          <p className="tablet:m-10 text-2xl text-bold">About.</p>
           <div className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-full laptop:w-3/5" style={{ whiteSpace: 'pre-line' }}>
             {data.aboutpara}
           </div>
         </div>
+      </main>
+      <footer>
         <Footer />
+      </footer>
       </div>
     </div>
   );

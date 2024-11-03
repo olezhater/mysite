@@ -37,12 +37,12 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
         {({ open }) => (
           <>
             <div className="flex items-center justify-between p-2 laptop:p-0">
-              <h1
+              <p
                 onClick={() => router.push("/")}
                 className="font-medium p-2 laptop:p-0 link"
               >
                 {name}.
-              </h1>
+              </p>
 
               <div className="flex items-center">
                 {data.darkMode && (
@@ -130,12 +130,12 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
           opacity: scrolled ? "100" : "unset",
         }}
       >
-        <h1
+        <p
           onClick={() => router.push("/")}
           className="font-medium cursor-pointer mob:p-2 tablet:pl-4 laptop:pl-10"
         >
           {name}.
-        </h1>
+        </p>
         {!isBlog ? (
           <div className="flex">
             <Button onClick={handleWorkScroll}>Work</Button>

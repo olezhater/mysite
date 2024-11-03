@@ -58,17 +58,17 @@ const WorkCard = ({ img, name, description, onClick, isHomepage, alt, className,
           }}
         />
       </div>
-      <h1 className="mt-5 text-3xl font-medium">
+      <h3 className="mt-5 text-3xl font-medium">
         {name ? name : "Project Name"}
-      </h1>
+      </h3>
       {isHomepage ? (
-        <h2 className="text-xl opacity-50 line-clamp-2">
+        <h4 className="text-xl opacity-50 line-clamp-2">
           {truncatedDescription ? truncatedDescription : "Description"}
-        </h2>
+        </h4>
       ) : (
-        <h2 className="text-xl opacity-50">
+        <h4 className="text-xl opacity-50">
           {description ? description : "Description"}
-        </h2>
+        </h4>
       )}
     </div>
   );

@@ -4,8 +4,9 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 class MyDocument extends Document {
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head>
+          <link rel="canonical" href="https://teretenko.com" />
           <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-8FW5D21YL4"
