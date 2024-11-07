@@ -1,0 +1,3 @@
+http://www.teretenko.com/* https://teretenko.com/:splat 301!
+http://teretenko.com/* https://teretenko.com/:splat 301!
+https://www.teretenko.com/* https://teretenko.com/:splat 301!
