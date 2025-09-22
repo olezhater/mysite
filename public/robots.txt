@@ -1,7 +1,14 @@
+# *
 User-agent: *
 Allow: /
+
+# *
+User-agent: *
 Disallow: /blog
 Disallow: /edit
 
+# Host
 Host: https://teretenko.com
+
+# Sitemaps
 Sitemap: https://teretenko.com/sitemap.xml

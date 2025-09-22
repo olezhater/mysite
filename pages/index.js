@@ -350,9 +350,9 @@ export default function Home() {
           ))}
           </div>
 
-          <div className={`mx-auto mt-20 text-center ${showWork ? "" : "hidden"}`}> {/*Это блок с кнопкой*/}
+          {/*<div className={`mx-auto mt-20 text-center ${showWork ? "" : "hidden"}`}> 
             <Button type="primary" onClick={() => window.open("https://www.behance.net/teretenko")}>View earlier projects on Behance</Button>
-          </div>
+          </div>*/}
         </div>
 
 {/* 
