@@ -84,7 +84,7 @@ const ProjectSix = () => {
               : "/img/project-8/8-1.png"
             }
             className="w-full"
-            alt="One of the top food retail chains"
+            alt="Crypto exchange UI before redesign, buy Bitcoin flow"
           />
         <div className="pt-16 mb-8">
           <h2 className="text-3xl my-5 font-bold">Solution</h2>
@@ -119,7 +119,7 @@ const ProjectSix = () => {
             : "/img/project-8/8-2.png"
           }
           className="w-full mb-8"
-          alt="Discover and Empathize"
+          alt="Crypto convert flow after redesign, BTC to ETH exchange"
         />
         <div className="pt-16 mb-8">
           <h2 className="text-3xl my-5 font-bold">Results</h2>

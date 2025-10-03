@@ -66,7 +66,7 @@ const ProjectSix = () => {
               : "/img/project-6/6-1.png"
             }
             className="w-full"
-            alt="One of the top food retail chains"
+            alt="YoloPrice app screens showing product search across 100+ stores"
           />
         <div className="pt-16 mb-8">
           <h2 className="text-3xl mt-5 font-bold">Problem</h2>
@@ -122,7 +122,7 @@ const ProjectSix = () => {
             : "/img/project-6/6-2.png"
           }
           className="w-full mb-8"
-          alt="Discover and Empathize"
+          alt="Yolo app search flow showing cordless screwdriver results with filters applied"
         />
         <div className="pt-16 mb-8">
           <h2 className="text-3xl mt-5 font-bold">First Iteration of the Solution</h2>
@@ -147,7 +147,7 @@ const ProjectSix = () => {
             : "/img/project-6/6-3.png"
           }
           className="w-full mb-8"
-          alt="Ideate and Prototype"
+          alt="Yolo app search screen showing cordless screwdriver results across selected stores"
         />
         <div className="pt-16 mb-8">
           <h2 className="text-3xl mt-5 font-bold">User Testing and Insights</h2>
@@ -196,7 +196,7 @@ const ProjectSix = () => {
           className="w-full mb-8"
           width="100%" 
           height="100%"
-          alt="Testing"
+          alt="Yolo app search flow with editable store list and search explanation"
         />
         <div className="pt-16 mb-8">
           <h2 className="text-3xl mt-5 font-bold">Results</h2>

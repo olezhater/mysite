@@ -52,7 +52,7 @@ useEffect(() => {
               : "/img/project-5/5-1.png"
             }
             className="w-full mb-8"
-            alt="What We Implemented and the Problems Solved"
+            alt="Presentation slide about moving search to the bottom of grocery delivery app to improve user experience"
           />
           <img
             src={
