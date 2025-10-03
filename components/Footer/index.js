@@ -6,7 +6,7 @@ import Button from "../Button";
 const Footer = ({}) => {
   return (
     <>
-      <div className="mt-5 laptop:mt-40">
+      <div className="container mx-auto mt-5 laptop:mt-40">
         <div>
           <p className="text-2xl text-bold">Contact.</p>
           <div className="mt-10">
@@ -22,7 +22,7 @@ const Footer = ({}) => {
           </div>
         </div>
       </div>
-      <p className="text-sm text-bold mt-2 laptop:mt-10 p-2 laptop:p-0">
+      <p className="container mx-auto text-sm text-bold my-2 laptop:mt-10 p-2 laptop:p-0">
         Made With ❤ by{" "}
         <Link href="http://www.teretenko.com">
           <a className="underline underline-offset-1">Oleg Teretenko</a>

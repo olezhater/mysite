@@ -48,15 +48,15 @@ const ProjectSix = () => {
             <img src="/img/project-4/download_googleplay.png" alt="Get it on Google Play" style={{ width: '120px', marginBottom: '1em' }} />
           </a>
         </div>
-        <div className="pt-16 laptop:px-6 tablet:px-4 mb-8">
+        <div className="pt-16 mb-8">
           <h2 className="text-3xl mt-5 font-bold">Introduction</h2>
-          <h2 className="text-xl my-5">
+          <p className="text-xl my-5">
             YoloPrice is an app that allows users to search for products across more than 100 stores with just one tap. I joined this project as a product designer and built the app from scratch. My responsibilities included:
-          </h2>
-          <ul className="text-xl list-disc pl-5">
-            <li>Designing the user flow and overall UX;</li>
-            <li>Creating the design system, including icons, illustrations, color palette, and typography;</li>
-            <li>Structuring and designing layouts.</li>
+          </p>
+          <ul mx-2 className="mx-2 text-xl list-disc pl-5">
+            <li className="mb-2">Designing the user flow and overall UX;</li>
+            <li className="mb-2">Creating the design system, including icons, illustrations, color palette, and typography;</li>
+            <li className="mb-2">Structuring and designing layouts.</li>
           </ul>
         </div>
           <img
@@ -68,45 +68,45 @@ const ProjectSix = () => {
             className="w-full"
             alt="One of the top food retail chains"
           />
-        <div className="pt-16 laptop:px-6 tablet:px-4 mb-8">
+        <div className="pt-16 mb-8">
           <h2 className="text-3xl mt-5 font-bold">Problem</h2>
-          <h2 className="text-xl my-5">
+          <p className="text-xl my-5">
             Users were not returning to the app after modifying the list of stores in the filters. This led to a decline in:
-          </h2>
-          <ul className="text-xl list-disc pl-5">
-            <li>
+          </p>
+          <ul className="mx-2 text-xl list-disc pl-5">
+            <li className="mb-2">
               <strong>Click-Through Rate (CTR):</strong> Fewer users clicked through to the stores&apos; websites.
             </li>
-            <li>
+            <li className="mb-2">
               <strong>Retention:</strong> Fewer users came back to the app over time.
             </li>
           </ul>
         </div>
-        <div className="pt-16 laptop:px-6 tablet:px-4 mb-8">
+        <div className="pt-16 mb-8">
           <h2 className="text-3xl mt-5 font-bold">Problem Analysis</h2>
-          <h2 className="text-xl my-5">
+          <p className="text-xl my-5">
             <strong>What I observed:</strong>
-          </h2>
+          </p>
           <p className="text-xl mb-4">
             Upon analyzing metrics, I discovered that users who disabled certain stores often stopped using the app. Their behavior could be split into two patterns:
           </p>
           <h3 className="text-xl my-3">
             Successful Path
           </h3>
-          <ol className="text-xl list-decimal pl-8 mb-4">
-            <li>Start a search →</li>
-            <li>Open filters →</li>
-            <li>Edit the store list →</li>
-            <li>Start a new search →</li>
-            <li>Open a product card →</li>
-            <li>Visit the store&apos;s website.</li>
+          <ol className="mx-2 text-xl list-decimal pl-8 mb-4">
+            <li className="mb-2">Start a search →</li>
+            <li className="mb-2">Open filters →</li>
+            <li className="mb-2">Edit the store list →</li>
+            <li className="mb-2">Start a new search →</li>
+            <li className="mb-2">Open a product card →</li>
+            <li className="mb-2">Visit the store&apos;s website.</li>
           </ol>
           <h3 className="text-xl my-3">
             Unsuccessful Path
           </h3>
-          <ol className="text-xl list-decimal pl-8 mb-4">
-            <li>Start a search after several days →</li>
-            <li>Exit the app.</li>
+          <ol className="mx-2 text-xl list-decimal pl-8 mb-4">
+            <li className="mb-2">Start a search after several days →</li>
+            <li className="mb-2">Exit the app.</li>
           </ol>
           <h2 className="text-xl my-5">
             <strong>Conclusion:</strong>
@@ -124,14 +124,14 @@ const ProjectSix = () => {
           className="w-full mb-8"
           alt="Discover and Empathize"
         />
-        <div className="pt-16 laptop:px-6 tablet:px-4 mb-8">
+        <div className="pt-16 mb-8">
           <h2 className="text-3xl mt-5 font-bold">First Iteration of the Solution</h2>
-          <h2 className="text-xl my-5">
+          <p className="text-xl my-5">
             I proposed adding a clear display of:
-          </h2>
-          <ul className="text-xl list-disc pl-5 mb-4">
-            <li>The number of stores included in the search.</li>
-            <li>A list of excluded stores.</li>
+          </p>
+          <ul className="mx-2 text-xl list-disc pl-5 mb-4">
+            <li className="mb-2">The number of stores included in the search.</li>
+            <li className="mb-2">A list of excluded stores.</li>
           </ul>
           <h3 className="text-xl my-3">
             Hypothesis:
@@ -149,37 +149,37 @@ const ProjectSix = () => {
           className="w-full mb-8"
           alt="Ideate and Prototype"
         />
-        <div className="pt-16 laptop:px-6 tablet:px-4 mb-8">
+        <div className="pt-16 mb-8">
           <h2 className="text-3xl mt-5 font-bold">User Testing and Insights</h2>
-          <h2 className="text-xl my-5">
+          <p className="text-xl my-5">
             To test my hypothesis, I conducted user interviews. Here are the key findings:
-          </h2>
-          <ol className="text-xl list-decimal pl-8 mb-4">
-            <li>
+          </p>
+          <ol className="mx-2 text-xl list-decimal pl-8 mb-4">
+            <li className="mb-2">
               <strong>Hypothesis confirmed:</strong> Users were not interested in logos of the stores being queried.
             </li>
-            <li>
+            <li className="mb-2">
               <strong>Forgotten excluded stores:</strong> One user shared a story where they excluded a store due to a bad delivery experience. Later, after resolving the issue with the store, they searched for products in the app again but didn&apos;t see results from that store. They thought the app was broken, not realizing they had disabled the store earlier.
             </li>
-            <li>
+            <li className="mb-2">
               <strong>Long search times:</strong> Users, accustomed to fast searches on marketplaces, were puzzled by the app&apos;s slower process. After I explained that the app queries stores, groups products, and filters irrelevant items, users appreciated the transparency and suggested improving the speed in the future.
             </li>
           </ol>
         </div>
-        <div className="pt-16 laptop:px-6 tablet:px-4 mb-8">
+        <div className="pt-16 mb-8">
           <h2 className="text-3xl mt-5 font-bold">Second Iteration of the Solution</h2>
-          <h2 className="text-xl my-5">
+          <p className="text-xl my-5">
             Based on the insights, I made the following UX improvements:
-          </h2>
-          <ol className="text-xl list-decimal pl-8 mb-4">
-            <li>
+          </p>
+          <ol className="mx-2 text-xl list-decimal pl-8 mb-4">
+            <li className="mb-2">
               <strong>Editable store list before starting a search:</strong>
               <ul className="text-xl list-disc pl-5 mt-2">
                 <li>Displayed the total number of stores included in the search.</li>
                 <li>Highlighted excluded stores with the option to re-enable them.</li>
               </ul>
             </li>
-            <li className="mt-4">
+            <li className="mb-2">
               <strong>Interactive explanation of the search process:</strong>
               <ul className="text-xl list-disc pl-5 mt-2">
                 <li>Educated users about the steps involved, clarifying why the search took longer than they expected.</li>
@@ -198,21 +198,21 @@ const ProjectSix = () => {
           height="100%"
           alt="Testing"
         />
-        <div className="pt-16 laptop:px-6 tablet:px-4 mb-8">
+        <div className="pt-16 mb-8">
           <h2 className="text-3xl mt-5 font-bold">Results</h2>
-          <h2 className="text-xl my-5">
+          <p className="text-xl my-5">
             After launching the updated app version, the key metrics improved significantly:
-          </h2>
-          <ul className="text-xl list-disc pl-5 mb-4">
-            <li>
+          </p>
+          <ul className="mx-2 text-xl list-disc pl-5 mb-4">
+            <li className="mb-2">
               <strong>Click-Through Rate (CTR):</strong> increased by 10%, as users felt more confident in the completeness and accuracy of the search results.
             </li>
-            <li>
+            <li className="mb-2">
               <strong>Retention:</strong> improved by 12% because users no longer forgot about excluded stores and continued relying on the app for finding the best prices.
             </li>
           </ul>
         </div>
-        <div className="pt-16 laptop:px-6 tablet:px-4 mb-8">
+        <div className="pt-16 mb-8">
           <h2 className="text-xl my-5">Below is a video showcasing how the app works on iOS:</h2>
         </div>
         <div style={{ position: "relative", paddingBottom: "56.25%", height: 0 }}>
@@ -225,9 +225,9 @@ const ProjectSix = () => {
         <h2 className="mt-40 text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold">You May also like</h2>
         <div className="mt-5 grid grid-cols-1 tablet:grid-cols-3 gap-4">
             {[
+              data.projects[10], // Project with id 11
               data.projects[3], // Project with id 3
               data.projects[4], // Project with id 5
-              data.projects[1], // Project with id 2
             ].map((p) => (
             <WorkCard
                 key={p.id}
